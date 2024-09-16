@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import {reactive} from "vue";
-import Head from './components/Head.vue';
 import cards from "./assets/data/cards.json"
-import Moje from './components/moje.vue';
+import Card from './components/Card.vue';
 
 const localStorageKey = 'cardsData'
 
@@ -47,8 +46,7 @@ const toggleCard = (id: number) => {
 
 </script>
 <template>
-   <Moje/>
- <Head/>
+   <Card :card="card" v-for="card in cards"/>
    <div class="grid grid-cols-6 gap-4 w-full">
        <div v-for="card in cards" class="border border-transparent" :class="{owned: isCardOwned(card.id)}" :key="card.id">
 

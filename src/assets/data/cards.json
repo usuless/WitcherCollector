@@ -63,21 +63,21 @@
       "id": 8
   },
   {
-      "deck": "Neutalne",
+      "deck": "Neutralne",
       "card": "Trzaskający Mróz",
       "location": "Dostępne na początku gry",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/2/2b/Tw3_gwent_card_face_Biting_Frost.png/revision/latest?cb=20151026174359",
       "id": 9
   },
   {
-      "deck": "Neutalne",
+      "deck": "Neutralne",
       "card": "Trzaskający Mróz",
       "location": "Dostępne na początku gry",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/2/2b/Tw3_gwent_card_face_Biting_Frost.png/revision/latest?cb=20151026174359",
       "id": 10
   },
   {
-      "deck": "Neutalne",
+      "deck": "Neutralne",
       "card": "Trzaskający Mróz",
       "location": "losowa wygrana",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/2/2b/Tw3_gwent_card_face_Biting_Frost.png/revision/latest?cb=20151026174359",
@@ -161,30 +161,30 @@
       "id": 22
   },
   {
-      "deck": "Neutalne",
+      "deck": "Neutralne",
       "card": "Cirilla Fiona Elen Riannon",
-      "location": "Gwint: Novigrad, Novigrad Forest Camp, Scoia’Tael sprzedawca",
+      "location": "Gwint: Novigrad, Leśny Obóz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/f/fb/Tw3_gwent_card_face_Cirilla.png/revision/latest?cb=20151026175733",
       "id": 23
   },
   {
-      "deck": "Neutalne",
-      "card": "Clear Weather ",
+      "deck": "Neutralne",
+      "card": "Czysta Pogoda ",
       "location": "Dostępne na początku gry",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/0/07/Tw3_gwent_card_face_Clear_Weather.png/revision/latest?cb=20151026181027",
       "id": 24
   },
   {
-      "deck": "Neutalne",
-      "card": "Clear Weather ",
-      "location": "Dostępne na początku gry OR losowa wygrana",
+      "deck": "Neutralne",
+      "card": "Czysta Pogoda ",
+      "location": "losowa wygrana",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/0/07/Tw3_gwent_card_face_Clear_Weather.png/revision/latest?cb=20151026181027",
       "id": 25
   },
   {
-      "deck": "Neutalne",
-      "card": "Clear Weather ",
-      "location": "Dostępne na początku gry OR losowa wygrana",
+      "deck": "Neutralne",
+      "card": "Czysta Pogoda ",
+      "location": "losowa wygrana",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/0/07/Tw3_gwent_card_face_Clear_Weather.png/revision/latest?cb=20151026181027",
       "id": 26
   },
@@ -196,16 +196,16 @@
       "id": 27
   },
   {
-      "deck": "Neutalne",
+      "deck": "Neutralne",
       "card": "Róg Dowódcy ",
-      "location": "Karczma na Rozstajach, karczmarz (can appear a 2nd time after inventory refresh)",
+      "location": "Karczma na Rozstajach, karczmarz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/3/33/Tw3_gwent_card_face_Commanders_Horn.png/revision/latest?cb=20151026180403",
       "id": 28
   },
   {
       "deck": "Neutralne",
       "card": "Róg Dowódcy ",
-      "location": "Passiflora, Marquise Serenity (note: card could be missing)",
+      "location": "Passiflora, Marquise Serenity",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/3/33/Tw3_gwent_card_face_Commanders_Horn.png/revision/latest?cb=20151026180403",
       "id": 29
   },
@@ -492,7 +492,7 @@
   {
       "deck": "Nilfgaard",
       "card": "Etolian Auxiliary Archers ",
-      "location": "Wieś Glińsk, handlarz (first rescue at persons in distress marker on the large island to the east of Oreton)",
+      "location": "Wieś Glińsk, handlarz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/b/bb/Tw3_gwent_card_face_Etolian_Auxiliary_Archers_2.png/revision/latest?cb=20160630125558",
       "id": 70
   },
@@ -891,7 +891,7 @@
   {
       "deck": "Scoia'tael",
       "card": "Milva",
-      "location": "Sprawa życia i śmierci, Posiadłość Vegelbudów, Vladimir de Cret (first round)",
+      "location": "Sprawa życia i śmierci, Posiadłość Vegelbudów, Vladimir de Cret",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/4/43/Tw3_gwent_card_face_Milva.png/revision/latest?cb=20160426201120",
       "id": 127
   },
@@ -974,35 +974,35 @@
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Poor Fucking Infantry ",
+      "card": "Biedna pierdolona piechota ",
       "location": "Dostępne na początku gry",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/1/16/Tw3_gwent_card_face_Poor_Fucking_Infantry.png/revision/latest?cb=20160320094501",
       "id": 139
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Poor Fucking Infantry ",
+      "card": "Biedna pierdolona piechota ",
       "location": "Dostępne na początku gry",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/1/16/Tw3_gwent_card_face_Poor_Fucking_Infantry.png/revision/latest?cb=20160320094501",
       "id": 140
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Poor Fucking Infantry ",
+      "card": "Biedna pierdolona piechota ",
       "location": "wieś Zalipie, sprzedawca",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/1/16/Tw3_gwent_card_face_Poor_Fucking_Infantry.png/revision/latest?cb=20160320094501",
       "id": 141
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Poor Fucking Infantry ",
+      "card": "Biedna pierdolona piechota ",
       "location": "Podgaje, Sprzedawca",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/1/16/Tw3_gwent_card_face_Poor_Fucking_Infantry.png/revision/latest?cb=20160320094501",
       "id": 142
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Prince Stennis",
+      "card": "Książe Stennis",
       "location": "Dostępne na początku gry",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/4/4f/Tw3_gwent_card_face_Prince_Stennis.png/revision/latest?cb=20160617173818",
       "id": 143
@@ -1010,7 +1010,7 @@
   {
       "deck": "Nilfgaard",
       "card": "Puttkammer",
-      "location": "Wieś Glińsk, handlarz (first rescue at persons in distress marker on the large island to the east of Oreton)",
+      "location": "Wieś Glińsk, handlarz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/0/04/Tw3_gwent_card_face_Puttkamer.png/revision/latest?cb=20160630130445",
       "id": 144
   },
@@ -1066,28 +1066,28 @@
   {
       "deck": "Scoia'tael",
       "card": "Saesenthessis",
-      "location": "Gwint: Starzy Znajomi, Temerian Resistance Camp, Vernon Roche",
+      "location": "Gwint: Starzy Znajomi, Temerski obóz, Vernon Roche",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/5/56/Tw3_gwent_card_face_Saesenthessis.png/revision/latest?cb=20160625115451",
       "id": 152
   },
   {
       "deck": "Neutralne",
-      "card": "Scorch ",
+      "card": "Pożoga ",
       "location": "Karczma Gęsia Pipa, karczmarz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/b/b8/Tw3_gwent_card_face_Scorch.png/revision/latest?cb=20151026181736",
       "id": 153
   },
   {
       "deck": "Neutralne",
-      "card": "Scorch ",
-      "location": "Ard Skellig, Port pod Kaer Trolde, Karczma Nowy Port, karczmarz (can appear a 2nd time after inventory refresh)",
+      "card": "Pożoga ",
+      "location": "Ard Skellig, Port pod Kaer Trolde, Karczma Nowy Port, karczmarz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/b/b8/Tw3_gwent_card_face_Scorch.png/revision/latest?cb=20151026181736",
       "id": 154
   },
   {
       "deck": "Neutralne",
-      "card": "Scorch ",
-      "location": "An Skellig, Urialla Village, karczmarz (note: card could be missing)",
+      "card": "Pożoga ",
+      "location": "An Skellig, Wieś Urialla, karczmarz",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/b/b8/Tw3_gwent_card_face_Scorch.png/revision/latest?cb=20151026181736",
       "id": 155
   },
@@ -1136,7 +1136,7 @@
   {
       "deck": "Królestwa Północy",
       "card": "Sigismund Dijkstra",
-      "location": "Gwint: Potyczki w Velen, Kasztel Wrońce, Phillip Strenger (Krwawy Baron)",
+      "location": "Gwint: Potyczki w Velen, Kasztel Wrońce, Krwawy Baron",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/7/7b/Tw3_gwent_card_face_Sigismund_Dijkstra.png/revision/latest?cb=20160320092811",
       "id": 162
   },
