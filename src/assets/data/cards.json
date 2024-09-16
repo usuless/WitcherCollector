@@ -1,0 +1,1262 @@
+[
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Albrich",
+      "Details": "Kasztel Wrońce, handlarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Krabopająk ",
+      "Details": "Ard Skellig, Arinbjorn, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Krabopająk ",
+      "Details": "An Skellig, Wieś Urialla, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Krabopająk ",
+      "Details": "Spikeroog, Svorlag, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Olbrzymi Krabopająk",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Assire var Anahid",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Balista ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Balista ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Barclay Els",
+      "Details": "Golden Sturgeon, karczmarz"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Trzaskający Mróz ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Trzaskający Mróz ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Trzaskający Mróz ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Black Infantry Archer ",
+      "Details": "Wieś Glińsk, handlarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Black Infantry Archer ",
+      "Details": "Lindenvale, sprzedawca"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Blue Stripes Commando ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Blue Stripes Commando ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Blue Stripes Commando ",
+      "Details": "Karczma w Białym Sadzie, karczmarz "
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Botchling",
+      "Details": "Ard Skellig, Kaer Trolde Harbor, New Port Inn, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Cahir Mawr Dyffryn aep Ceallach",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Catapult ",
+      "Details": "Karczma w Białym Sadzie, karczmarz "
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Catapult ",
+      "Details": "Passiflora, Marquise Serenity"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Celaeno Harpy",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Ciaran aep Easnillien",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Cirilla Fiona Elen Riannon",
+      "Details": "Gwint: Novigrad, Novigrad Forest Camp, Scoia’Tael sprzedawca"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Clear Weather ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Clear Weather ",
+      "Details": "Dostępne na początku gry OR losowa wygrana"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Clear Weather ",
+      "Details": "Dostępne na początku gry OR losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Cockatrice",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Neutalne",
+      "Card": "Róg Dowódcy ",
+      "Details": "Karczma na Rozstajach, karczmarz (can appear a 2nd time after inventory refresh)"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Róg Dowódcy ",
+      "Details": "Passiflora, Marquise Serenity (note: card could be missing)"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Róg Dowódcy ",
+      "Details": "Oxenfurt, Karczma Alchemia, Stjepan"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Rębacze z Crinfrid ",
+      "Details": "Karczma w Białym Sadzie, karczmarz "
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Rębacze z Crinfrid ",
+      "Details": "Wieś Glińsk, handlarz"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Rębacze z Crinfrid ",
+      "Details": "Podgaje, Sprzedawca"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Wiedźma: Kuchta",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Wiedźma: Prządka",
+      "Details": "Gwint: Potyczki w Velen, Benek, Stary Mędrzec"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Wiedźma: Szepciucha",
+      "Details": "Ard Skellig, Arinbjorn, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Cynthia",
+      "Details": "Kasztel Wrońce, Kwatermistrz"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Jaskier",
+      "Details": "Sprawa życia i śmierci, Posiadłość Vegelbudów, Marius Florin"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Manekin do ćwiczeń ",
+      "Details": "Karczma w Białym Sadzie, karczmarz"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Manekin do ćwiczeń ",
+      "Details": "Kasztel Wrońce, Kwatermistrz"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Manekin do ćwiczeń ",
+      "Details": "Karczma Siedem kotów, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Dennis Cranmer",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Dethmold",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Łucznik z Dol Blathanna",
+      "Details": "Passiflora, Marquise Serenity"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Dol Blathanna Scout ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Dol Blathanna Scout ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Dol Blathanna Scout ",
+      "Details": "Golden Sturgeon, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Draug",
+      "Details": "Gwint: Rozgrywki na Skellige, Ard Skellig, Kaer Trolde, Crach an Craite"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Dun Banner Medic",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Krasnoludzki Wojownik ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Krasnoludzki Wojownik ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Krasnoludzki Wojownik ",
+      "Details": "Oxenfurt, Karczma Alchemia, Stjepan albolosowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Earth Elemental",
+      "Details": "Ard Skellig, Kaer Trolde Harbor, New Port Inn, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Eithné",
+      "Details": "Gwint: Starzy Znajomi, Rosemary and Thyme, Zoltan"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Elfi harcownik ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Elfi harcownik ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Elfi harcownik ",
+      "Details": "An Skellig, Urialla Village, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Emhyr var Emreis: Cesarz Nilfgaardu",
+      "Details": "Karczma na Rozstajach, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Emhyr var Emreis: Jeż z Erlenwaldu",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Emhyr var Emreis: Pan Południa",
+      "Details": "O wysoką stawkę, Passiflora, Sasha"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Emhyr var Emreis: TBiały płomień",
+      "Details": "Gwint: Rozgrywki na Skellige"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Emiel Regis Rohellec Terzieff",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Endriaga",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Eredin: Bringer of Death",
+      "Details": "O wysoką stawkę, Passiflora, Hrabia Tybalt"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Eredin: Commander of the Red Riders",
+      "Details": "Kaer Trolde Harbor, New Port Inn, karczmarz OR Dostępne na początku gry"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Eredin: Destroyer of Worlds",
+      "Details": "Gwint: Potyczki w Velen, reward for completing the quest"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Eredin: King of the Wild Hunt",
+      "Details": "Dostępne na początku gry OR Kaer Trolde Harbor, New Port Inn, karczmarz"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Esterad Thyssen",
+      "Details": "Gwint: Novigrad, Bathhouse, Sigismund Dijkstra"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Etolian Auxiliary Archers ",
+      "Details": "Lindenvale, sprzedawca"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Etolian Auxiliary Archers ",
+      "Details": "Wieś Glińsk, handlarz (first rescue at persons in distress marker on the large island to the east of Oreton)"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Fiend",
+      "Details": "Ard Skellig, Arinbjorn, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Filavandrel aen Fidhail",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Fire Elemental",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Foglet",
+      "Details": "Spikeroog, Svorlag, karczmarz"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Foltest: King of Temeria",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Foltest: Lord Commander of the North",
+      "Details": "Karczma w Białym Sadzie, Karczmarz"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Foltest: The Siegemaster",
+      "Details": "Ogród w Wyzimie, Nilfgardzki uczony"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Foltest: The Steel-Forged",
+      "Details": "O wysoką stawkę, Passiflora, Bernard Tulle"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Forktail",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Francesca Findabair: Daisy of the Valley",
+      "Details": "Karczma Gęsia Pipa, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Francesca Findabair: Pureblood Elf",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Francesca Findabair: Queen of Dol Blathanna",
+      "Details": "O wysoką stawkę, Passiflora, Finneas"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Francesca Findabair: The Beautiful",
+      "Details": "Gwint: Novigrad, reward for completing the quest"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Frightener",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Fringilla Vigo",
+      "Details": "Niebezpieczna Gra, Dom Cezara"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Gargoyle",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Geralt of Rivia",
+      "Details": "Gwint: Starzy Znajomi,  Karczma Siedem kotów, Thaler"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Ghoul ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Ghoul ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Ghoul ",
+      "Details": "Faroe, karczma Harviken, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Grave Hag",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Griffin",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Harpy",
+      "Details": "Faroe, karczma Harviken, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Havekar Healer ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Havekar Healer ",
+      "Details": "Karczma Gęsia Pipa, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Havekar Healer ",
+      "Details": "Kingfisher Inn, Olivier"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Havekar Smuggler ",
+      "Details": "Karczma Siedem kotów, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Havekar Smuggler ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Havekar Smuggler ",
+      "Details": "Kingfisher Inn, Olivier"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Heavy Zerrikanian Fire Scorpion",
+      "Details": "Lindenvale, sprzedawca"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Ice Giant",
+      "Details": "Spikeroog, Svorlag, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Ida Emean aep Sivney",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Imlerith",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gęsta Mgła ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gęsta Mgła ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gęsta Mgła ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Impera Brigade Guard ",
+      "Details": "Kasztel Wrońce, handlarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Impera Brigade Guard ",
+      "Details": "Karczma na Rozstajach, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Impera Brigade Guard ",
+      "Details": "Karczma Siedem kotów, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Impera Brigade Guard ",
+      "Details": "Karczma Gęsia Pipa, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Iorveth",
+      "Details": "Terapia Szokowa, Ard Skellig, Gedyneith"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Isengrim Faoiltiarna",
+      "Details": "Niebezpieczna Gra, Zed's home"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "John Natalis",
+      "Details": "Niebezpieczna Gra, Golden Sturgeon Tavern, Ravvy"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Kaedweni Siege Expert ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Kaedweni Siege Expert ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Kaedweni Siege Expert ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Kayran",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Keira Metz",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Leshen",
+      "Details": "Gwint: Rozgrywki na Skellige, Ard Skellig, Gedyneith, Ermion"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Letho of Gulet",
+      "Details": "Gwint: Potyczki w Velen, Oreton, Boatwright"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Mahakaman Defender (1 of 5)",
+      "Details": "Kingfisher Inn, Olivier"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Mahakaman Defender (2 of 5)",
+      "Details": "Golden Sturgeon, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Mahakaman Defender (3 of 5)",
+      "Details": "Karczma Siedem kotów, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Mahakaman Defender (4 of 5)",
+      "Details": "Oxenfurt, Karczma Alchemia, Stjepan"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Mahakaman Defender (5 of 5)",
+      "Details": "Passiflora, Marquise Serenity"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Menno Coehoorn",
+      "Details": "Gwint: Rozgrywki z Karczmarzami, Karczma na Rozstajach, karczmarz"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Milva",
+      "Details": "Sprawa życia i śmierci, Posiadłość Vegelbudów, Vladimir de Cret (first round)"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Morteisen",
+      "Details": "Podgaje, Sprzedawca"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Morvran Voorhis",
+      "Details": "Gwint: Novigrad, Passiflora, Marquise Serenity"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Mysterious Elf",
+      "Details": "Gwint: Rozgrywki na Skellige, Ard Skellig, Gedyneith, Gremist"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Nausicaa Cavalry Rider ",
+      "Details": "Kasztel Wrońce, Kwatermistrz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Nausicaa Cavalry Rider ",
+      "Details": "Karczma na Rozstajach, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Nausicaa Cavalry Rider ",
+      "Details": "Kasztel Wrońce, handlarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Nekker ",
+      "Details": "Following the Thread, Faroe, Trottheim, loot Hammonds corpse"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Nekker ",
+      "Details": "Faroe, karczma Harviken, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Nekker ",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Philippa Eilhart",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Plague Maiden",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Poor Fucking Infantry ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Poor Fucking Infantry ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Poor Fucking Infantry ",
+      "Details": "Lindenvale, sprzedawca"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Poor Fucking Infantry ",
+      "Details": "Podgaje, Sprzedawca"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Prince Stennis",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Puttkammer",
+      "Details": "Wieś Glińsk, handlarz (first rescue at persons in distress marker on the large island to the east of Oreton)"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Rainfarn",
+      "Details": "Lindenvale, sprzedawca"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Redanian Foot Soldier ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Redanian Foot Soldier ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Renuald aep Matsen",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Riordain",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Rotten Mangonel",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Sabrina Glevissig",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Saesenthessis",
+      "Details": "Gwint: Starzy Znajomi, Temerian Resistance Camp, Vernon Roche"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Scorch ",
+      "Details": "Karczma Gęsia Pipa, karczmarz"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Scorch ",
+      "Details": "Ard Skellig, Kaer Trolde Harbor, New Port Inn, karczmarz (can appear a 2nd time after inventory refresh)"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Scorch ",
+      "Details": "An Skellig, Urialla Village, karczmarz (note: card could be missing)"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Sheldon Skaggs",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Shilard Fitz-Oesterlen",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Siege Engineer",
+      "Details": "Karczma na Rozstajach, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Siege Technician",
+      "Details": "Golden Sturgeon, karczmarz"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Siege Tower",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Siegfried of Denesle",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Sigismund Dijkstra",
+      "Details": "Gwint: Potyczki w Velen, Kasztel Wrońce, Phillip Strenger (Krwawy Baron)"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Síle de Tansarville",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Stefan Skellen",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Sweers",
+      "Details": "Wieś Glińsk, handlarz"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Thaler",
+      "Details": "Ard Skellig, Arinbjorn, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Tibor Eggebracht",
+      "Details": "Gwint: Rozgrywki z Karczmarzami, Kingfisher Inn, Olivier"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Ulewny Deszcz ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Ulewny Deszcz ",
+      "Details": "Dostępne na początku gry albo losowa wygrana"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Ulewny Deszcz ",
+      "Details": "Dostępne na początku gry albo losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Toruviel",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Trebusz ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Trebusz ",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Triss Merigold",
+      "Details": "Gwint: Starzy Znajomi, The Nowhere Inn OR at Kaer Morhen, Lambert"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Vampire: Bruxa",
+      "Details": "Sprawa życia i śmierci, Posiadłość Vegelbudów, Gomo Seeling (second round)"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Vampire: Ekimmara",
+      "Details": "Spikeroog, Svorlag, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Vampire: Fleder",
+      "Details": "Faroe, karczma Harviken, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Vampire: Garkain",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Vampire: Katakan",
+      "Details": "Gwint: Rozgrywki na Skellige, Ard Skellig, Kaer Muire, Jarl Madman Lugos"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Vanhemar",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Vattier de Rideaux",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Vernon Roche",
+      "Details": "Gwint: Potyczki w Velen, Podgaje, Haddy"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Ves",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Vesemir",
+      "Details": "Gwint: Novigrad, Hierarch Square, Bank of Vivaldi, Vimme Vivaldi"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Villentretenmerth",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Vreemde",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Kadet Vrihedd",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Brygada Vrihedd ",
+      "Details": "Oxenfurt, Karczma Alchemia, Stjepan"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Brygada Vrihedd ",
+      "Details": "Kingfisher Inn, Olivier"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Wilkołak",
+      "Details": "An Skellig, Urialla Village, karczmarz"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Wywerna",
+      "Details": "losowa wygrana"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Yaevinn",
+      "Details": "Gwint: Rozgrywki na Skellige, Ard Skellig, Kaer Trolde Harbor, Sjusta the Tailor"
+    },
+    {
+      "Deck": "Królestwa Północy",
+      "Card": "Yarpen Zigrin",
+      "Details": "Dostępne na początku gry"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Yennefer of Vengerberg",
+      "Details": "Gwint: Rozgrywki z Karczmarzami, Oxenfurt, Karczma Alchemia, Stjepan"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Młody Emisariusz ",
+      "Details": "Karczma Gęsia Pipa, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Młody Emisariusz ",
+      "Details": "Karczma Siedem kotów, karczmarz"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Zerrikanian Fire Scorpion",
+      "Details": "Kasztel Wrońce, handlarz"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Zoltan Chivay",
+      "Details": "Karczma w Białym Sadzie, Aldert Geert OR found under the Hanged Man's Tree after prologue"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Krowa",
+      "Details": "Brunwich, Barn, Top floor"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Eredin Bréacc Glas: The Treacherous",
+      "Details": "Upper Mill, Dulla kh'Amanni"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Francesca Findabair: Hope of the Aen Seidhe",
+      "Details": "Upper Mill, Dulla kh'Amanni"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gaunter O'Dimm: Darkness ",
+      "Details": "Upper Mill, Dulla kh'Amanni"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gaunter O'Dimm: Darkness ",
+      "Details": "cyrk pod Carsten, sprzedawca"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gaunter O'Dimm: Darkness ",
+      "Details": "cyrk pod Carsten, sprzedawca"
+    },
+    {
+      "Deck": "Northern Realms",
+      "Card": "Foltest: Son of Medell",
+      "Details": "cyrk pod Carsten, sprzedawca"
+    },
+    {
+      "Deck": "Scoia'tael",
+      "Card": "Schirrú",
+      "Details": "cyrk pod Carsten, sprzedawca"
+    },
+    {
+      "Deck": "Nilfgaard",
+      "Card": "Emhyr var Emreis: Invader of the North",
+      "Details": "cyrk pod Carsten, sprzedawca"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Gaunter O'Dimm",
+      "Details": "Open Sesame!, Borsodi Brothers' Auction House, Robert Hilbert"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Olgierd von Everec",
+      "Details": "Shani OR top of Shani's Clinic in Oxenfurt"
+    },
+    {
+      "Deck": "Potwory",
+      "Card": "Ropucha",
+      "Details": "Olgierd von Everec OR on the table in Karczma Alchemia"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Berserker",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Birna Bran",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Lugos Siny",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Skald klanu Heymey",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Płatniesz klanu Tordarroh",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Wojownik klanu an Craite",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Crach an Craite",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Donar an Hindar",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Hjalmar",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Holger Czarna Ręka",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Lugos Szalony",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Svanrige",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Udalryk",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Łucznik klanu Brokvar ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Łucznik klanu Brokvar ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Łucznik klanu Brokvar ",
+      "Details": "Castel Ravello Vineyard, Zielarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Tarczowniczka klanu Drummond ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Tarczowniczka klanu Drummond ",
+      "Details": "The Cockatrice Inn, Karczmarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Tarczowniczka klanu Drummond ",
+      "Details": "Francollarts, Armorer"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Lekki Drakkar ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Lekki Drakkar ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Lekki Drakkar ",
+      "Details": "Beauclair, Hauteville, Perfumery, sprzedawca"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Mardroeme ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Mardroeme ",
+      "Details": "Port Beauclair, The Belles of Beauclair, Madame Isabelle"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Mardroeme ",
+      "Details": "Beauclair, Hauteville, Herb Store, Zielarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Drakkar Wojenny ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Drakkar Wojenny ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Drakkar Wojenny ",
+      "Details": "Tourney Grounds, Karczmarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Młody Berseker ",
+      "Details": "Otrzymasz od Hrabi Monnier'a"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Młody Berseker ",
+      "Details": "Tourney Grounds, Blacksmith"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Młody Berseker ",
+      "Details": "Beauclair, Krawiec, Pierre"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Cerys",
+      "Details": "Karczma pod Beczką i Szpuntem, Karczmarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Clan Dimun Pirate",
+      "Details": "Beauclair, Hauteville, Dupont & Sons, sprzedawca"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Draig Bon-Dhu",
+      "Details": "Bażanciarnia, Karczmarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Ermion",
+      "Details": "Francollarts, Karczmarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Kambi",
+      "Details": "Francollarts, Karczmarz"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "King Bran",
+      "Details": "Książęcy Kamerling w Beauclair"
+    },
+    {
+      "Deck": "Skellige",
+      "Card": "Olaf",
+      "Details": "Beauclair, Winiarnia Żmija i Rubin, Sommelier"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Skelligijski Sztorm ",
+      "Details": "Tourney Grounds, Armorer"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Skelligijski Sztorm ",
+      "Details": "Tourney Grounds, Barber"
+    },
+    {
+      "Deck": "Neutralne",
+      "Card": "Skelligijski Sztorm ",
+      "Details": "Port Beauclair, Butcher"
+    }
+  ]
