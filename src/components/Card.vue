@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 const props = defineProps({
     card: {
         type: Object,
@@ -8,30 +9,34 @@ const props = defineProps({
 
 const deck:string = props.card.deck
     let color = ''
-
+    let backgroundColor = ''
     switch(deck) {
-    case "Neutralne": color = "white"
+    case "Neutralne": color = "white";
+    backgroundColor = "white"
         break;
-    case "Potwory": color = "red"
+    case "Potwory": color = "red";
+    backgroundColor = "red"
         break;
-    case "Królestwa Północy": color = "blue"
+    case "Królestwa Północy": color = "blue";
+    backgroundColor = "blue"
         break;
-    case "Scoia'tael": color = "green"
+    case "Scoia'tael": color = "green";
+    backgroundColor = "green"
         break;
     case "Nilfgaard": color = "yellow";
+    backgroundColor = "yellow"
         break;
 }
 
-let active = "blablabla"
-
+let check = ref('')
 
 </script>
 <template>
-    <div :class="[color, active]" class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10">
+    <div :class="color" :style="{backgroundColor: check ? backgroundColor : 'transparent', color: check ? 'black' : 'white'}" class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10">
         <p class="w-1/3">{{card.card}}</p>
         <p class="w-1/3">{{card.location}}</p>
         <p class="w-1/3">{{card.deck}}</p>
-        <input type="checkbox">        
+        <input v-model="check" true-value="true" false-value="" :value="check" type="checkbox"/>        
     </div>
 </template>
 <style scoped>
