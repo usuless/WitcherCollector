@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import type { Ref } from 'vue';
 const props = defineProps({
     card: {
         type: Object,
         required: true
     },
 })
+
+const isVisible: Ref<boolean> = ref(true);
 
 const deck:string = props.card.deck
     let color = ''
@@ -26,13 +29,16 @@ const deck:string = props.card.deck
     case "Nilfgaard": color = "yellow";
     backgroundColor = "yellow"
         break;
+    case "Skellige": color = "violet";
+    backgroundColor = "violet"
+        break;
 }
 
 let check = ref('')
 
 </script>
 <template>
-    <div :class="color" :style="{backgroundColor: check ? backgroundColor : 'transparent', color: check ? 'black' : 'white'}" class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10">
+    <div v-show="isVisible" :class="color" :style="{backgroundColor: check ? backgroundColor : 'transparent', color: check ? 'black' : 'white'}" class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10">
         <p class="w-1/3">{{card.card}}</p>
         <p class="w-1/3">{{card.location}}</p>
         <p class="w-1/3">{{card.deck}}</p>
@@ -63,6 +69,10 @@ let check = ref('')
 
  .white {
     @apply border-gray-600 border-4 text-white
+ }
+
+ .violet {
+    @apply border-violet-600 border-4 text-white
  }
 
 </style>

@@ -134,14 +134,14 @@
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Catapult ",
+      "card": "Katapulta ",
       "location": "Karczma w Białym Sadzie, karczmarz ",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/8/84/Tw3_gwent_card_face_Catapult_1.png/revision/latest?cb=20160320085320",
       "id": 19
   },
   {
       "deck": "Królestwa Północy",
-      "card": "Catapult ",
+      "card": "Katapulta ",
       "location": "Passiflora, Marquise Serenity",
       "image": "https://vignette.wikia.nocookie.net/witcher/images/8/84/Tw3_gwent_card_face_Catapult_1.png/revision/latest?cb=20160320085320",
       "id": 20
@@ -1435,7 +1435,7 @@
       "id": 204
   },
   {
-      "deck": "Northern Realms",
+      "deck": "Królestwa Północy",
       "card": "Foltest: Syn Medella",
       "location": "cyrk pod Carsten, sprzedawca",
       "image": "https://static.wikia.nocookie.net/witcher/images/2/24/Tw3_gwent_card_face_Foltest_Son_of_Medell.png/revision/latest?cb=20151026143958",
