@@ -9,6 +9,13 @@ const location: Ref<string> = ref('')
 const name: Ref<string> = ref('')
 const deck: Ref<string> = ref('')
 
+
+const emit = defineEmits<{
+  (e: 'location', location: number): void,
+  (e: 'name', name: string): void,
+  (e: 'deck', deck: string): void
+}>()
+
 </script>
 <template>
     <div class="flex items-center">
@@ -22,27 +29,27 @@ const deck: Ref<string> = ref('')
         </div>
         <div class="grid grid-cols-3 grid-row-2">
             <div class="content-between mx-2">
-                <input @input="event => deck = event.target.id" class="justify-self-center" type="radio" id="Neutralne" name="deck">
+                <input @input="event => deck = (event.target as any).id" class="justify-self-center" type="radio" id="Neutralne" name="deck">
                 <p>Neutralne</p>
             </div>
             <div class="content-between mx-2">
-                <input @input="event => deck = event.target.id" class="justify-self-center" type="radio" id="Potwory" name="deck">
+                <input @input="event => deck = (event.target as any).id" class="justify-self-center" type="radio" id="Potwory" name="deck">
                 <p>Potwory</p>
             </div>
             <div class="content-between mx-2">
-                <input @input="event => deck = event.target.id" class="justify-self-center" type="radio" id="Skellige" name="deck">
+                <input @input="event => deck = (event.target as any).id" class="justify-self-center" type="radio" id="Skellige" name="deck">
                 <p>Skellige</p>
             </div>
             <div class="content-between mx-2">
-                <input @input="event => deck = event.target.id" class="justify-self-center" type="radio" id="Nilfgaard" name="deck">
+                <input @input="event => deck = (event.target as any).id" class="justify-self-center" type="radio" id="Nilfgaard" name="deck">
                 <p>Nilfgaard</p>
             </div>
             <div class="content-between mx-2">
-                <input @input="event => deck = event.target.id" class="justify-self-center" type="radio" id="Scoia'tael" name="deck">
+                <input @input="event => deck = (event.target as any).id" class="justify-self-center" type="radio" id="Scoia'tael" name="deck">
                 <p>Scoia'tael</p>
             </div>
             <div class="content-between mx-2">
-                <input @input="event => deck = event.target.id" class="justify-self-center" type="radio" id="Królestwa Północy" name="deck">
+                <input @input="event => deck = (event.target as any).id" class="justify-self-center" type="radio" id="Królestwa Północy" name="deck">
                 <p>Królestwa Płn.</p>
             </div>
         </div>
