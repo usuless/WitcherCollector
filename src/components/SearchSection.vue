@@ -16,6 +16,8 @@ const emit = defineEmits<{
   (e: 'deck', deck: string): void
 }>()
 
+/* made emit */
+
 </script>
 <template>
     <div class="flex items-center">
