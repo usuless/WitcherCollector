@@ -4,8 +4,6 @@ import type { Ref } from 'vue';
 
 const location: Ref<string> = ref('')
 const name: Ref<string> = ref('')
-let deck: Ref<string> = ref('')
-
 
 const emit = defineEmits<{
   (e: 'location', location: string): void,
@@ -13,10 +11,8 @@ const emit = defineEmits<{
   (e: 'deck', deck: any): void
 }>()
 
-/* made emit */
-
 let deckChange = (event: any):void => {
-    deck.value = event.target.id
+    emit('deck', event.target.id)
 }
 
 </script>

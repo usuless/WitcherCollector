@@ -5,17 +5,8 @@ const props = defineProps({
     card: {
         type: Object,
         required: true
-    },
-    location: {
-        type: String,
-        required: true
     }
 })
-const isVisible: Ref<boolean> = ref(true);
-
-let search = () => {
-    return props.card.location.filter((el: string) => el.toLowerCase().includes(props.location.toLowerCase()))
-}
 
 const deck:string = props.card.deck
     let color = ''
@@ -41,12 +32,11 @@ const deck:string = props.card.deck
         break;
 }
 
-let check = ref('')
+let check: Ref<string> = ref('')
 
 </script>
 <template>
-    <button @click="search">asdsad</button>
-    <div v-show="isVisible" :class="color" :style="{backgroundColor: check ? backgroundColor : 'transparent', color: check ? 'black' : 'white'}" class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10">
+    <div :class="color" :style="{backgroundColor: check ? backgroundColor : 'transparent', color: check ? 'black' : 'white'}" class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10">
         <p class="w-1/3">{{card.card}}</p>
         <p class="w-1/3">{{card.location}}</p>
         <p class="w-1/3">{{card.deck}}</p>
