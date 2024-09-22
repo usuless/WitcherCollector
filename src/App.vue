@@ -5,17 +5,15 @@ import SearchSection from "./components/SearchSection.vue";
 import type { Ref } from "vue";
 import { computed, ref } from "vue";
 
-
 let searchLocation: Ref<string> = ref('')
 let searchName:Ref<string>=ref('')
 
-
 const filteredLocation = computed(() => {
-   return cards.filter(item => item.location.includes(searchLocation.value))
+   return cards.filter(item => item.location.toLowerCase().includes(searchLocation.value.toLowerCase()))
 })
 
 const sumOfFilters = computed(() => {
-   return filteredLocation.value.filter(item => item.card.includes(searchName.value))
+   return filteredLocation.value.filter(item => item.card.toLowerCase().includes(searchName.value.toLowerCase()))
 })
 
 </script>
