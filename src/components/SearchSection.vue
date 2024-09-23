@@ -15,6 +15,8 @@ let deckChange = (event: any):void => {
     emit('deck', event.target.id)
 }
 
+/* idk what to do :((( */
+
 </script>
 <template>
     <div class="flex items-center">
