@@ -23,6 +23,9 @@ const finalFilter = ref(cards)
 const debounced = refDebounced(filteredNames, 700)
 
 watch(debounced, () => finalFilter.value = filteredNames.value)
+watch(deckName, () => {
+   console.log(deckName)
+})
 
 </script>
 <template>
