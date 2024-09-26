@@ -18,27 +18,27 @@ let deckModel = defineModel<string>('deck', {required:true})
         </div>
         <div class="grid grid-cols-3 grid-row-2">
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="radio" id="Neutralne" name="deck">
+                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Neutralne" name="deck">
                 <p>Neutralne</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="radio" id="Potwory" name="deck">
+                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Potwory" name="deck">
                 <p>Potwory</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="radio" id="Skellige" name="deck">
+                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Skellige" name="deck">
                 <p>Skellige</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="radio" id="Nilfgaard" name="deck">
+                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Nilfgaard" name="deck">
                 <p>Nilfgaard</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="radio" id="Scoia'tael" name="deck">
+                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Scoia'tael" name="deck">
                 <p>Scoia'tael</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="radio" id="Królestwa Północy" name="deck">
+                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Królestwa Północy" name="deck">
                 <p>Królestwa Płn.</p>
             </div>
         </div>
