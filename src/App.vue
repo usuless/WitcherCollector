@@ -8,30 +8,33 @@ import { refDebounced} from '@vueuse/core';
 
 let searchLocation: Ref<string> = ref('')
 let searchName:Ref<string>=ref('')
-let deckName:Ref<string>=ref('')
+let deckName:Ref<Array<string>>=ref([])
+
+   const filteredDecks = computed(() => {
+      return cards.filter(item => deckName.value.includes(item.deck))
+   })
 
    const filteredLocation = computed(() => {
-   return cards.filter(item => item.location.toLowerCase().includes(searchLocation.value.toLowerCase()))
+      return filteredDecks.value.filter(item => item.location.toLowerCase().includes(searchLocation.value.toLowerCase()))
 })
 
    const filteredNames = computed(() => {
-   return filteredLocation.value.filter(item => item.card.toLowerCase().includes(searchName.value.toLowerCase()))
+      return filteredLocation.value.filter(item => item.card.toLowerCase().includes(searchName.value.toLowerCase()))
 })
 
 const finalFilter = ref(cards)
 
-const debounced = refDebounced(filteredNames, 700)
+const debounced = refDebounced(filteredDecks, 700)
 
 watch(debounced, () => finalFilter.value = filteredNames.value)
-watch(deckName, () => {
-   console.log(deckName.value)
-})
 
 </script>
 <template>
+   <button @click="console.log(deckName)">CLICK</button>
+   <button @click="console.log(filteredDecks)">CLIC</button>
    <SearchSection :data="cards" 
    v-model:location="searchLocation"
    v-model:name="searchName"
-   v-model:deck="deckName"/>
+   @decks="(event) => deckName = event"/>
    <Card :card="card" v-for="card in finalFilter" :key="card.id"/>
 </template>
