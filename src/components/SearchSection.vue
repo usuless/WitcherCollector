@@ -3,10 +3,20 @@ import { defineModel} from 'vue';
 
 let locationModel = defineModel<string>('location', {required:true});
 let nameModel = defineModel<string>('name', {required:true});
-let deckModel = defineModel<string>('deck', {required:true})
+
+let currentDeck: String[] = []
+
+const findDeck = (event: any) => {
+    if (currentDeck.includes(event.target.id)) {
+        currentDeck = currentDeck.filter(item => item != event.target.id)
+    } else {
+        currentDeck.push(event.target.id)
+    }
+}
 
 </script>
 <template>
+    <button @click="console.log(currentDeck)">CLICK</button>
     <div class="flex items-center">
         <div class="mr-5">
             <input v-model="nameModel" class="p-3 rounded-3xl" name="card" type="text">
@@ -18,27 +28,27 @@ let deckModel = defineModel<string>('deck', {required:true})
         </div>
         <div class="grid grid-cols-3 grid-row-2">
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Neutralne" name="deck">
+                <input @click="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Neutralne" name="deck">
                 <p>Neutralne</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Potwory" name="deck">
+                <input @click="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Potwory" name="deck">
                 <p>Potwory</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Skellige" name="deck">
+                <input @click="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Skellige" name="deck">
                 <p>Skellige</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Nilfgaard" name="deck">
+                <input @click="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Nilfgaard" name="deck">
                 <p>Nilfgaard</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Scoia'tael" name="deck">
+                <input @click="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Scoia'tael" name="deck">
                 <p>Scoia'tael</p>
             </div>
             <div class="content-between mx-2">
-                <input v-model="deckModel" class="justify-self-center" type="checkbox" id="Królestwa Północy" name="deck">
+                <input @click="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Królestwa Północy" name="deck">
                 <p>Królestwa Płn.</p>
             </div>
         </div>
