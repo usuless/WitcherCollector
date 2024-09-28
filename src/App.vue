@@ -30,8 +30,6 @@ watch(debounced, () => finalFilter.value = filteredNames.value)
 
 </script>
 <template>
-   <button @click="console.log(deckName)">CLICK</button>
-   <button @click="console.log(filteredDecks)">CLIC</button>
    <SearchSection :data="cards" 
    v-model:location="searchLocation"
    v-model:name="searchName"
