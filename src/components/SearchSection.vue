@@ -22,6 +22,17 @@ const findDeck = (event: any) => {
         emit('decks', currentDeck)
     }
 }
+
+/* 
+
+1. spróbować rozłożyć @click
+
+2. sprawdzić watchera
+
+3. sprawdzić biblioteki
+
+*/
+
 </script>
 <template>
     <div class="flex items-center">
