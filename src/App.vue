@@ -11,10 +11,14 @@ let searchName:Ref<string>=ref('')
 let deckName:Ref<Array<string>>=ref([])
 
    const filteredDecks = computed(() => {
+      console.log(filteredDecks.value)
+      console.log(deckName.value)
       return cards.filter(item => deckName.value.includes(item.deck))
    })
 
    const filteredLocation = computed(() => {
+      console.log(filteredDecks.value)
+      console.log(deckName.value)
       return filteredDecks.value.filter(item => item.location.toLowerCase().includes(searchLocation.value.toLowerCase()))
 })
 
@@ -22,14 +26,15 @@ let deckName:Ref<Array<string>>=ref([])
       return filteredLocation.value.filter(item => item.card.toLowerCase().includes(searchName.value.toLowerCase()))
 })
 
-const finalFilter = ref(cards)
+const finalFilter: Ref<{}> = ref(cards)
 
 const debounced = refDebounced(filteredNames, 700)
-
 watch(debounced, () => finalFilter.value = filteredNames.value)
 
 </script>
 <template>
+   {{ deckName }}
+   <button @click="console.log(deckName)">CLICK</button>
    <SearchSection :data="cards" 
    v-model:location="searchLocation"
    v-model:name="searchName"
