@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineModel, defineEmits} from 'vue';
+import { defineModel, defineEmits, ref} from 'vue';
 
 let locationModel = defineModel<string>('location', {required:true});
 let nameModel = defineModel<string>('name', {required:true});
@@ -23,6 +23,8 @@ const findDeck = (event: any) => {
     }
 }
 
+const model = ref("")
+
 /* 
 
 1. spróbować rozłożyć @click
@@ -35,6 +37,7 @@ const findDeck = (event: any) => {
 
 </script>
 <template>
+    <button @click="console.log(model)">CLICK</button>
     <div class="flex items-center">
         <div class="mr-5">
             <input v-model="nameModel" class="p-3 rounded-3xl" name="card" type="text">
@@ -46,7 +49,7 @@ const findDeck = (event: any) => {
         </div>
         <div class="grid grid-cols-3 grid-row-2">
             <div class="content-between mx-2">
-                <input @change="(event) => findDeck(event)" class="justify-self-center" type="checkbox" id="Neutralne" name="deck">
+                <input @change="(event) => findDeck(event)" v-model="model" :true-value="'asd'" class="justify-self-center" type="checkbox" id="Neutralne" name="deck">
                 <p>Neutralne</p>
             </div>
             <div class="content-between mx-2">

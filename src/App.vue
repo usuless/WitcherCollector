@@ -24,7 +24,7 @@ let deckName:Ref<Array<string>>=ref([])
 
 const finalFilter = ref(cards)
 
-const debounced = refDebounced(filteredDecks, 700)
+const debounced = refDebounced(filteredNames, 700)
 
 watch(debounced, () => finalFilter.value = filteredNames.value)
 
