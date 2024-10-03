@@ -1,34 +1,31 @@
 <script setup lang="ts">
-import { defineModel, defineEmits, ref} from 'vue';
+import { defineModel, defineEmits, ref, type Ref } from 'vue';
 
-let locationModel = defineModel<string>('location', {required:true});
-let nameModel = defineModel<string>('name', {required:true});
-let emit = defineEmits<{
-    decks: [decks: Array<string>]
-}>()
+const locationModel = defineModel<string>('location', {required:true});
+const nameModel = defineModel<string>('name', {required:true});
+const currentDecksModel: Ref<Array<string>> = defineModel<Array<string>>('decks', {required: true}) 
 
-let currentDeck: Array<string> = []
 
-const findDeck = (event: any) => {
-    console.log(event.target.id)
-    console.log(currentDeck)
-    if (!currentDeck.includes(event.target.id)) {
-        console.log("nie zawiera i przed: " + currentDeck)
-        currentDeck.push(event.target.id)
-        console.log("nie zawiera i po: " + currentDeck)
-        emit('decks', currentDeck)
-    } else {
-        console.log("zawiera i przed: " + event.target.id)
-        currentDeck = currentDeck.filter(item => item != event.target.id)
-        console.log("zawiera i po: " + currentDeck)
-        emit('decks', currentDeck)
-    }
+
+type Deck = {
+    name: string
 }
 
-const model = ref("")
+const decksGrouping: Array<Deck> = [
+    {name: "Neutralne"},
+    {name: "Skellige"},
+    {name: "Scoia'tael"},
+    {name: "Nilfgaard"},
+    {name: "Królestwa Północy"},
+    {name: "Potwory"}
+]
 
 </script>
 <template>
+    DEKI 
+    <pre>
+        {{  currentDecksModel }}
+    </pre>
     <div class="flex items-center">
         <div class="mr-5">
             <input v-model="nameModel" class="p-3 rounded-3xl" name="card" type="text">
@@ -39,31 +36,10 @@ const model = ref("")
             <label class="ml-3" for="location">Gdzie szukasz?</label>
         </div>
         <div class="grid grid-cols-3 grid-row-2">
-            <div class="content-between mx-2">
-                <input @click="(event: string) => findDeck(event)" v-model="model" :true-value="'asd'" class="justify-self-center" type="checkbox" id="Neutralne" name="deck">
-                <p>Neutralne</p>
-            </div>
-            <div class="content-between mx-2">
-                <input @click="(event: string) => findDeck(event)" class="justify-self-center" type="checkbox" id="Potwory" name="deck">
-                <p>Potwory</p>
-            </div>
-            <div class="content-between mx-2">
-                <input @click="(event: string) => findDeck(event)" class="justify-self-center" type="checkbox" id="Skellige" name="deck">
-                <p>Skellige</p>
-            </div>
-            <div class="content-between mx-2">
-                <input @click="(event: string) => findDeck(event)" class="justify-self-center" type="checkbox" id="Nilfgaard" name="deck">
-                <p>Nilfgaard</p>
-            </div>
-            <div class="content-between mx-2">
-                <input @click="(event: string) => findDeck(event)" class="justify-self-center" type="checkbox" id="Scoia'tael" name="deck">
-                <p>Scoia'tael</p>
-            </div>
-            <div class="content-between mx-2">
-                <input @click="(event: string) => findDeck(event)" class="justify-self-center" type="checkbox" id="Królestwa Północy" name="deck">
-                <p>Królestwa Płn.</p>
+            <div class="content-between mx-2" v-for="deck in decksGrouping" :key="deck.name">
+                <input type="checkbox" :value="deck.name" :id="deck.name" v-model="currentDecksModel" class="justify-self-center">
+                <label :for="deck.name"><p>{{deck.name}}</p></label>
             </div>
         </div>
     </div>
 </template>
-<style scoped></style>

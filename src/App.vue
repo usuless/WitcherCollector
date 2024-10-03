@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import cards from "./assets/data/cards.json"
-import Card from './components/Card.vue';
-import SearchSection from "./components/SearchSection.vue";
 import type { Ref } from "vue";
 import { computed, ref, watch } from "vue";
 import { refDebounced} from '@vueuse/core';
 
+import cards from "./assets/data/cards.json"
+import Card from './components/Card.vue';
+import SearchSection from "./components/SearchSection.vue";
+
 let searchLocation: Ref<string> = ref('')
-let searchName:Ref<string>=ref('')
-let deckName:Ref<Array<string>>=ref([])
+let searchName: Ref<string>=ref('')
+let deckName: Ref<Array<string>>=ref([])
 
    const filteredDecks = computed(() => {
       console.log(filteredDecks.value)
@@ -34,10 +35,9 @@ watch(debounced, () => finalFilter.value = filteredNames.value)
 </script>
 <template>
    {{ deckName }}
-   <button @click="console.log(deckName)">CLICK</button>
    <SearchSection :data="cards" 
    v-model:location="searchLocation"
    v-model:name="searchName"
-   @decks="(event) => deckName = event"/>
+   v-model:decks="deckName"/>
    <Card :card="card" v-for="card in finalFilter" :key="card.id"/>
 </template>
