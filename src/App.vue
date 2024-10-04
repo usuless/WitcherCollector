@@ -7,9 +7,19 @@ import cards from "./assets/data/cards.json";
 import Card from "./components/Card.vue";
 import SearchSection from "./components/SearchSection.vue";
 
-let searchLocation: Ref<string> = ref("");
-let searchName: Ref<string> = ref("");
-let deckName: Ref<Array<string>> = ref([]);
+const searchLocation: Ref<string> = ref("");
+const searchName: Ref<string> = ref("");
+const deckName: Ref<Array<string>> = ref([]);
+
+const checkedIDs: Ref<Array<string>> = ref([]);
+
+interface Deck {
+  deck: string;
+  card: string;
+  location: string;
+  image: string;
+  id: number;
+}
 
 const filteredDecks = computed(() => {
   if (deckName.value.length === 0) return cards;
@@ -29,17 +39,26 @@ const filteredNames = computed(() => {
   );
 });
 
-const finalFilter: Ref<{}> = ref(cards);
+const finalFilter: Ref<Array<Deck>> = ref(cards);
 
 const debounced = refDebounced(filteredNames, 700);
 watch(debounced, () => (finalFilter.value = filteredNames.value));
+watch(checkedIDs, () =>
+  localStorage.setItem("checkedDecks", JSON.stringify(checkedIDs.value)),
+);
 </script>
 <template>
+  {{ checkedIDs }}
   <SearchSection
     :data="cards"
     v-model:location="searchLocation"
     v-model:name="searchName"
     v-model:decks="deckName"
   />
-  <Card :card="card" v-for="card in finalFilter" :key="card.id" />
+  <Card
+    :card="card"
+    v-for="card in finalFilter"
+    v-model:isChecked="checkedIDs"
+    :key="card.id"
+  />
 </template>
