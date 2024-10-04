@@ -39,25 +39,27 @@ switch (deck) {
     break;
 }
 
-let check: Ref<string> = ref("");
+const test = "blablabla";
+
+const check: Ref<string> = ref("");
 </script>
 <template>
+  {{ check }}
   <div
     :class="color"
     :style="{
       backgroundColor: check ? backgroundColor : 'transparent',
       color: check ? 'black' : 'white',
     }"
-    class="flex w-10/12 h-16 items-center text-black my-2 p-1 px-10"
+    class="my-2 flex h-16 w-10/12 items-center p-1 px-10 text-black"
   >
     <p class="w-1/3">{{ card.card }}</p>
     <p class="w-1/3">{{ card.location }}</p>
     <p class="w-1/3">{{ card.deck }}</p>
     <input
       v-model="check"
-      true-value="true"
-      false-value=""
-      :value="check"
+      :true-value="card.card"
+      :id="card.id"
       type="checkbox"
     />
   </div>
@@ -68,26 +70,26 @@ let check: Ref<string> = ref("");
 }
 
 .yellow {
-  @apply border-yellow-600 border-4 text-white;
+  @apply border-4 border-yellow-600 text-white;
 }
 
 .green {
-  @apply border-green-600 border-4 text-white;
+  @apply border-4 border-green-600 text-white;
 }
 
 .blue {
-  @apply border-blue-600 border-4 text-white;
+  @apply border-4 border-blue-600 text-white;
 }
 
 .red {
-  @apply border-red-600 border-4 text-white;
+  @apply border-4 border-red-600 text-white;
 }
 
 .white {
-  @apply border-gray-600 border-4 text-white;
+  @apply border-4 border-gray-600 text-white;
 }
 
 .violet {
-  @apply border-violet-600 border-4 text-white;
+  @apply border-4 border-violet-600 text-white;
 }
 </style>

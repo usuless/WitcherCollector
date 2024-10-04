@@ -18,8 +18,6 @@ const filteredDecks = computed(() => {
 });
 
 const filteredLocation = computed(() => {
-  console.log(filteredDecks.value);
-  console.log(deckName.value);
   return filteredDecks.value.filter((item) =>
     item.location.toLowerCase().includes(searchLocation.value.toLowerCase()),
   );
