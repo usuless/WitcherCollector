@@ -40,7 +40,7 @@ const decksGrouping: Array<Deck> = [
       />
       <label class="ml-3" for="location">Gdzie szukasz?</label>
     </div>
-    <div class="grid-row-2 grid grid-cols-3">
+    <div class="grid grid-cols-3">
       <div
         class="mx-2 content-between"
         v-for="deck in decksGrouping"

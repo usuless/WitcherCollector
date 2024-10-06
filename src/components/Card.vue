@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from "vue";
+import { watch, ref } from "vue";
 const props = defineProps({
   card: {
     type: Object,
@@ -37,15 +38,35 @@ switch (deck) {
 <template>
   <div
     :class="color"
-    class="my-2 flex h-16 w-10/12 items-center p-1 px-10 text-black"
+    class="my-2 flex flex-col items-center px-10 py-5 text-black"
   >
-    <p class="w-1/3">{{ card.card }}</p>
-    <p class="w-1/3">{{ card.location }}</p>
-    <p class="w-1/3">{{ card.deck }}</p>
-    <input v-model="check" :value="card.id" :id="card.id" type="checkbox" />
+    <img :src="card.image" alt="" />
+    <p class="">{{ card.card }}</p>
+    <p class="">{{ card.location }}</p>
+    <p class="">{{ card.deck }}</p>
+    <input
+      v-model="check"
+      :value="card.id"
+      :id="card.id"
+      class="checkbox"
+      type="checkbox"
+    />
   </div>
 </template>
 <style scoped>
+.checkbox {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+  @apply my-3;
+}
+
+.checkedCard {
+  color: yellow;
+}
+
 .clippy {
   clip-path: polygon(0 1%, 97% 0, 100% 100%, 0% 100%);
 }

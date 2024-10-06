@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Ref } from "vue";
 import { computed, ref, watch } from "vue";
-import { refDebounced } from "@vueuse/core";
+import { refDebounced, useStorage } from "@vueuse/core";
 
 import cards from "./assets/data/cards.json";
 import Card from "./components/Card.vue";
@@ -11,7 +11,7 @@ const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
 
-const checkedIDs: Ref<Array<string>> = ref([]);
+let checkedIDs: Ref<Array<string>> = useStorage("checkedDecks", ref([]));
 
 interface Deck {
   deck: string;
@@ -55,10 +55,12 @@ watch(checkedIDs, () =>
     v-model:name="searchName"
     v-model:decks="deckName"
   />
-  <Card
-    :card="card"
-    v-for="card in finalFilter"
-    v-model:isChecked="checkedIDs"
-    :key="card.id"
-  />
+  <div class="grid grid-cols-3 gap-4">
+    <Card
+      :card="card"
+      v-for="card in finalFilter"
+      v-model:isChecked="checkedIDs"
+      :key="card.id"
+    />
+  </div>
 </template>
