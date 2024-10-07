@@ -34,6 +34,8 @@ switch (deck) {
     color = "violet";
     break;
 }
+
+const help = () => console.log(props.card.id);
 </script>
 <template>
   <div
@@ -48,6 +50,7 @@ switch (deck) {
       v-model="check"
       :value="card.id"
       :id="card.id"
+      @click="help"
       class="checkbox"
       type="checkbox"
     />
