@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Ref } from "vue";
-import { watch, ref } from "vue";
 const props = defineProps({
   card: {
     type: Object,
@@ -13,7 +12,7 @@ const check: Ref<Array<string>> = defineModel<Array<string>>("isChecked", {
 
 const deck: string = props.card.deck;
 
-let color = "";
+let color: string | {} = "";
 switch (deck) {
   case "Neutralne":
     color = "white";
@@ -34,8 +33,6 @@ switch (deck) {
     color = "violet";
     break;
 }
-
-const help = () => console.log(props.card.id);
 </script>
 <template>
   <div
@@ -50,7 +47,6 @@ const help = () => console.log(props.card.id);
       v-model="check"
       :value="card.id"
       :id="card.id"
-      @click="help"
       class="checkbox"
       type="checkbox"
     />
