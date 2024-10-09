@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from "vue";
 import type { Ref } from "vue";
 const props = defineProps({
   card: {
@@ -33,9 +34,18 @@ switch (deck) {
     color = "violet";
     break;
 }
+
+const backgroundCheck = computed(() => {
+  if (check.value.includes(props.card.id)) {
+    return "background-color: red";
+  } else {
+    return "background-color: green";
+  }
+});
 </script>
 <template>
   <div
+    :style="backgroundCheck"
     :class="color"
     class="my-2 flex flex-col items-center px-10 py-5 text-black"
   >
