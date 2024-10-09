@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import type { Ref } from "vue";
+import type { ComputedRef, Ref } from "vue";
 const props = defineProps({
   card: {
     type: Object,
@@ -11,10 +11,9 @@ const check: Ref<Array<string>> = defineModel<Array<string>>("isChecked", {
   required: true,
 });
 
-const deck: string = props.card.deck;
+let color: string = "";
 
-let color: string | {} = "";
-switch (deck) {
+switch (props.card.deck) {
   case "Neutralne":
     color = "white";
     break;
@@ -35,18 +34,17 @@ switch (deck) {
     break;
 }
 
-const backgroundCheck = computed(() => {
+const backgroundCheck: ComputedRef<string> = computed(() => {
   if (check.value.includes(props.card.id)) {
-    return "background-color: red";
+    return "bg-" + color + "-600";
   } else {
-    return "background-color: green";
+    return "border-4 border-" + color + "-600 text-white";
   }
 });
 </script>
 <template>
   <div
-    :style="backgroundCheck"
-    :class="color"
+    :class="backgroundCheck"
     class="my-2 flex flex-col items-center px-10 py-5 text-black"
   >
     <img :src="card.image" alt="" />
@@ -70,37 +68,5 @@ const backgroundCheck = computed(() => {
   border-radius: 5px;
   border: 2px solid #555;
   @apply my-3;
-}
-
-.checkedCard {
-  color: yellow;
-}
-
-.clippy {
-  clip-path: polygon(0 1%, 97% 0, 100% 100%, 0% 100%);
-}
-
-.yellow {
-  @apply border-4 border-yellow-600 text-white;
-}
-
-.green {
-  @apply border-4 border-green-600 text-white;
-}
-
-.blue {
-  @apply border-4 border-blue-600 text-white;
-}
-
-.red {
-  @apply border-4 border-red-600 text-white;
-}
-
-.white {
-  @apply border-4 border-gray-600 text-white;
-}
-
-.violet {
-  @apply border-4 border-violet-600 text-white;
 }
 </style>
