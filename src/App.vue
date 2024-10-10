@@ -48,7 +48,6 @@ watch(checkedIDs, () =>
 );
 </script>
 <template>
-  {{ checkedIDs }}
   <SearchSection
     :data="cards"
     v-model:location="searchLocation"

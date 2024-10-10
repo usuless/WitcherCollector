@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { ref, computed } from "vue";
 import type { ComputedRef, Ref } from "vue";
 const props = defineProps({
   card: {
@@ -11,41 +11,46 @@ const check: Ref<Array<string>> = defineModel<Array<string>>("isChecked", {
   required: true,
 });
 
-let color: string = "";
+let color: Ref<string> = ref("");
 
 switch (props.card.deck) {
   case "Neutralne":
-    color = "white";
+    color.value = "white";
     break;
   case "Potwory":
-    color = "red";
+    color.value = "red";
     break;
   case "Królestwa Północy":
-    color = "blue";
+    color.value = "blue";
     break;
   case "Scoia'tael":
-    color = "green";
+    color.value = "green";
     break;
   case "Nilfgaard":
-    color = "yellow";
+    color.value = "yellow";
     break;
   case "Skellige":
-    color = "violet";
+    color.value = "violet";
     break;
 }
 
-const backgroundCheck: ComputedRef<string> = computed(() => {
+const backgroundCheck: ComputedRef<{}> = computed(() => {
   if (check.value.includes(props.card.id)) {
-    return "bg-" + color + "-600";
+    return {
+      backgroundColor: color.value,
+      opacity: 0.2,
+      color: "black",
+      fontWeight: "bold",
+    };
   } else {
-    return "border-4 border-" + color + "-600 text-white";
+    return { border: `2px solid ${color.value}` };
   }
 });
 </script>
 <template>
   <div
-    :class="backgroundCheck"
-    class="my-2 flex flex-col items-center px-10 py-5 text-black"
+    :style="backgroundCheck"
+    class="text-yellow my-2 flex flex-col items-center px-10 py-5"
   >
     <img :src="card.image" alt="" />
     <p class="">{{ card.card }}</p>
