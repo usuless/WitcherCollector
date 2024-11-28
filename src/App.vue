@@ -34,7 +34,8 @@ const filteredChecks = computed(() => {
   }
 
   return filteredDecks.value.filter(
-    (item) => !checkedIDs.value.includes(item.id),
+    // @ts-ignore
+    (item) => !(checkedIDs.value as Array<number>).includes(item.id),
   );
 });
 
