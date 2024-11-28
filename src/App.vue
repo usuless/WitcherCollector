@@ -10,8 +10,9 @@ import SearchSection from "./components/SearchSection.vue";
 const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
+const filterChecked: Ref<boolean> = ref(false);
 
-let checkedIDs: Ref<Array<string>> = useStorage("checkedDecks", ref([]));
+let checkedIDs = useStorage("checkedDecks", ref([]));
 
 interface Deck {
   deck: string;
@@ -27,8 +28,18 @@ const filteredDecks = computed(() => {
   return cards.filter((item) => deckName.value.includes(item.deck));
 });
 
+const filteredChecks = computed(() => {
+  if (filterChecked.value === false) {
+    return filteredDecks.value;
+  }
+
+  return filteredDecks.value.filter(
+    (item) => !checkedIDs.value.includes(item.id),
+  );
+});
+
 const filteredLocation = computed(() => {
-  return filteredDecks.value.filter((item) =>
+  return filteredChecks.value.filter((item) =>
     item.location.toLowerCase().includes(searchLocation.value.toLowerCase()),
   );
 });
@@ -49,10 +60,10 @@ watch(checkedIDs, () =>
 </script>
 <template>
   <SearchSection
-    :data="cards"
     v-model:location="searchLocation"
     v-model:name="searchName"
     v-model:decks="deckName"
+    v-model:filterChecked="filterChecked"
   />
   <div class="grid grid-cols-3 gap-4">
     <Card

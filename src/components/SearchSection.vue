@@ -6,6 +6,7 @@ const nameModel = defineModel<string>("name", { required: true });
 const currentDecksModel = defineModel<Array<string>>("decks", {
   required: true,
 });
+const checkedFilter = defineModel<boolean>("filterChecked", { required: true });
 
 type Deck = {
   name: string;
@@ -57,6 +58,14 @@ const decksGrouping: Array<Deck> = [
           ><p>{{ deck.name }}</p></label
         >
       </div>
+    </div>
+    <div class="">
+      <button @click="checkedFilter = !checkedFilter" v-if="checkedFilter">
+        Pokaż zdobyte
+      </button>
+      <button @click="checkedFilter = !checkedFilter" v-else>
+        Ukryj zdobyte
+      </button>
     </div>
   </div>
 </template>
