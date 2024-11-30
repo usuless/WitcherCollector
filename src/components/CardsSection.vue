@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import type { Ref } from "vue";
+import type { Deck } from "../assets/types/types";
 import { computed, ref, watch } from "vue";
 import { refDebounced, useStorage } from "@vueuse/core";
 
 import cards from "../assets/data/cards.json";
 import Card from "./Card.vue";
 import SearchSection from "./SearchSection.vue";
+import ProgressCircle from "./ProgressCircle.vue";
 
 const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
@@ -13,14 +15,6 @@ const deckName: Ref<Array<string>> = ref([]);
 const filterChecked: Ref<boolean> = ref(false);
 
 let checkedIDs = useStorage("checkedDecks", ref([]));
-
-interface Deck {
-  deck: string;
-  card: string;
-  location: string;
-  image: string;
-  id: number;
-}
 
 const filteredDecks = computed(() => {
   if (deckName.value.length === 0) return cards;
@@ -66,10 +60,14 @@ watch(checkedIDs, () =>
     v-model:decks="deckName"
     v-model:filterChecked="filterChecked"
   />
+  <ProgressCircle
+    v-model:howManyCards="cards.length"
+    v-model:howManyChecks="checkedIDs.length"
+  />
   <div class="grid grid-cols-3 gap-4">
     <Card
-      :card="card"
       v-for="card in finalFilter"
+      :card="card"
       v-model:isChecked="checkedIDs"
       :key="card.id"
     />

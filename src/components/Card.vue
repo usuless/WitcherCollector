@@ -52,7 +52,7 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
     :style="backgroundCheck"
     class="text-yellow my-2 flex flex-col items-center px-10 py-5"
   >
-    <img :src="card.image" alt="" />
+    <img :src="card.image" class="lazyload" alt="" />
     <p class="">{{ card.card }}</p>
     <p class="">{{ card.location }}</p>
     <p class="">{{ card.deck }}</p>

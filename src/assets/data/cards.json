@@ -85,14 +85,14 @@
   },
   {
     "deck": "Nilfgaard",
-    "card": "Black Infantry Archer",
+    "card": "Nilfgaardzki Łucznik",
     "location": "Wieś Glińsk, handlarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/a/aa/Tw3_gwent_card_face_Black_Infantry_Archer_2.png/revision/latest?cb=20160630124501",
     "id": 12
   },
   {
     "deck": "Nilfgaard",
-    "card": "Black Infantry Archer",
+    "card": "Nilfgaardzki Łucznik",
     "location": "wieś Zalipie, sprzedawca",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/8/8b/Tw3_gwent_card_face_Black_Infantry_Archer_1.png/revision/latest?cb=20160630124429",
     "id": 13
@@ -120,7 +120,7 @@
   },
   {
     "deck": "Potwory",
-    "card": "Botchling",
+    "card": "Poroniec",
     "location": "Ard Skellig, Port pod Kaer Trolde, Karczma Nowy Port, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/6/6c/Tw3_gwent_card_face_Botchling.png/revision/latest?cb=20160425152408",
     "id": 17
@@ -148,7 +148,7 @@
   },
   {
     "deck": "Potwory",
-    "card": "Celaeno Harpy",
+    "card": "Harpia Calaeno",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/1/16/Tw3_gwent_card_face_Celaeno_Harpy.png/revision/latest?cb=20160425153153",
     "id": 21
@@ -162,7 +162,7 @@
   },
   {
     "deck": "Neutralne",
-    "card": "Cirilla Fiona Elen Riannon",
+    "card": "Cirilla",
     "location": "Gwint: Novigrad, Leśny Obóz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/f/fb/Tw3_gwent_card_face_Cirilla.png/revision/latest?cb=20151026175733",
     "id": 23
@@ -190,7 +190,7 @@
   },
   {
     "deck": "Potwory",
-    "card": "Cockatrice",
+    "card": "Bazyliszek",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/c/c9/Tw3_gwent_card_face_Cockatrice.png/revision/latest?cb=20160425153836",
     "id": 27
@@ -484,21 +484,21 @@
   },
   {
     "deck": "Nilfgaard",
-    "card": "Etolian Auxiliary Archers ",
+    "card": "Wsparcie Łóczników",
     "location": "wieś Zalipie, sprzedawca",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/6/64/Tw3_gwent_card_face_Etolian_Auxiliary_Archers_1.png/revision/latest?cb=20160630125524",
     "id": 69
   },
   {
     "deck": "Nilfgaard",
-    "card": "Etolian Auxiliary Archers ",
+    "card": "Wsparcie Łóczników",
     "location": "Wieś Glińsk, handlarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/bb/Tw3_gwent_card_face_Etolian_Auxiliary_Archers_2.png/revision/latest?cb=20160630125558",
     "id": 70
   },
   {
     "deck": "Potwory",
-    "card": "Fiend",
+    "card": "Bies",
     "location": "Ard Skellig, Arinbjorn, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/5/52/Tw3_gwent_card_face_Fiend.png/revision/latest?cb=20160425164718",
     "id": 71
@@ -512,84 +512,84 @@
   },
   {
     "deck": "Potwory",
-    "card": "Fire Elemental",
+    "card": "Żywiołak Ognia",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/a/ae/Tw3_gwent_card_face_Fire_Elemental.png/revision/latest?cb=20160425174944",
     "id": 73
   },
   {
     "deck": "Potwory",
-    "card": "Foglet",
+    "card": "Mglak",
     "location": "Spikeroog, Svorlag, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/2/21/Tw3_gwent_card_face_Foglet.png/revision/latest?cb=20160425170541",
     "id": 74
   },
   {
     "deck": "Królestwa Północy",
-    "card": "Foltest: King of Temeria",
+    "card": "Foltest: Król Temerii",
     "location": "Dostępne na początku gry",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/ba/Tw3_gwent_card_face_Foltest_King_of_Temeria.png/revision/latest?cb=20160320082442",
     "id": 75
   },
   {
     "deck": "Królestwa Północy",
-    "card": "Foltest: Lord Commander of the North",
+    "card": "Foltest: Dowódca Północy",
     "location": "Karczma w Białym Sadzie, Karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/7/7e/Tw3_gwent_card_face_Foltest_Lord_Commander_of_the_North.png/revision/latest?cb=20160320083102",
     "id": 76
   },
   {
     "deck": "Królestwa Północy",
-    "card": "Foltest: The Siegemaster",
+    "card": "Foltest: Zdobywca",
     "location": "Ogród w Wyzimie, Nilfgardzki uczony",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/8/80/Tw3_gwent_card_face_Foltest_the_Siegemaster.png/revision/latest?cb=20160617173724",
     "id": 77
   },
   {
     "deck": "Królestwa Północy",
-    "card": "Foltest: The Steel-Forged",
+    "card": "Foltest: Żelazny",
     "location": "O wysoką stawkę, Passiflora, Bernard Tulle",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/a/ae/Tw3_gwent_card_face_Foltest_the_Steel-Forged.png/revision/latest?cb=20160320083847",
     "id": 78
   },
   {
     "deck": "Potwory",
-    "card": "Forktail",
+    "card": "Widłogon",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/bf/Tw3_gwent_card_face_Forktail.png/revision/latest?cb=20160425175417",
     "id": 79
   },
   {
     "deck": "Scoia'tael",
-    "card": "Francesca Findabair: Daisy of the Valley",
+    "card": "Francesca Findabair: Stokrotka z Dolin",
     "location": "Karczma Gęsia Pipa, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/bb/Tw3_gwent_card_face_Francesca_Findabair_Daisy_of_the_Valley.png/revision/latest?cb=20180415043326",
     "id": 80
   },
   {
     "deck": "Scoia'tael",
-    "card": "Francesca Findabair: Pureblood Elf",
+    "card": "Francesca Findabair: Elfka czystej krwi",
     "location": "Dostępne na początku gry",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/1/1b/Tw3_gwent_card_face_Francesca_Findabair_Pureblood_Elf.png/revision/latest?cb=20180415043140",
     "id": 81
   },
   {
     "deck": "Scoia'tael",
-    "card": "Francesca Findabair: Queen of Dol Blathanna",
+    "card": "Francesca Findabair: Królowa Dol Blathanna",
     "location": "O wysoką stawkę, Passiflora, Finneas",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/b1/Tw3_gwent_card_face_Francesca_Findabair_Queen_of_Dol_Blathanna.png/revision/latest?cb=20180415043422",
     "id": 82
   },
   {
     "deck": "Scoia'tael",
-    "card": "Francesca Findabair: The Beautiful",
-    "location": "Gwint: Novigrad, reward for completing the quest",
+    "card": "Francesca Findabair: Najpiękniejsza kobieta na świecie",
+    "location": "Gwint: Novigrad, Nagroda za ukończenie misji",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/f/f1/Tw3_gwent_card_face_Francesca_Findabair_the_Beautiful.png/revision/latest?cb=20180415043241",
     "id": 83
   },
   {
     "deck": "Potwory",
-    "card": "Frightener",
+    "card": "Przeraza",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/f/f8/Tw3_gwent_card_face_Frightener.png/revision/latest?cb=20160425175858",
     "id": 84
@@ -603,98 +603,98 @@
   },
   {
     "deck": "Potwory",
-    "card": "Gargoyle",
+    "card": "Gargulec",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/6/6e/Tw3_gwent_card_face_Gargoyle.png/revision/latest?cb=20160425180126",
     "id": 86
   },
   {
     "deck": "Neutralne",
-    "card": "Geralt of Rivia",
-    "location": "Gwint: Starzy Znajomi,  Karczma Siedem kotów, Thaler",
+    "card": "Geralt z Rivii",
+    "location": "Gwint: Starzy Znajomi,  Karczma Siedem kotów, Talar",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/a/a6/Tw3_gwent_card_face_Geralt.png/revision/latest?cb=20151026181409",
     "id": 87
   },
   {
     "deck": "Potwory",
-    "card": "Ghoul ",
+    "card": "Ghul ",
     "location": "losowa wygrana",
-    "image": "https://vignette.wikia.nocookie.net/witcher/images/7/76/Tw3_gwent_card_face_Ghoul_3.png/revision/latest?cb=20160425180654",
+    "image": "https://vignette.wikia.nocookie.net/witcher/images/7/76/Tw3_gwent_card_face_Ghul_3.png/revision/latest?cb=20160425180654",
     "id": 88
   },
   {
     "deck": "Potwory",
-    "card": "Ghoul ",
+    "card": "Ghul ",
     "location": "losowa wygrana",
-    "image": "https://vignette.wikia.nocookie.net/witcher/images/0/09/Tw3_gwent_card_face_Ghoul_1.png/revision/latest?cb=20160425180654",
+    "image": "https://vignette.wikia.nocookie.net/witcher/images/0/09/Tw3_gwent_card_face_Ghul_1.png/revision/latest?cb=20160425180654",
     "id": 89
   },
   {
     "deck": "Potwory",
-    "card": "Ghoul ",
+    "card": "Ghul ",
     "location": "Faroe, karczma Harviken, karczmarz",
-    "image": "https://vignette.wikia.nocookie.net/witcher/images/0/03/Tw3_gwent_card_face_Ghoul_2.png/revision/latest?cb=20160425180654",
+    "image": "https://vignette.wikia.nocookie.net/witcher/images/0/03/Tw3_gwent_card_face_Ghul_2.png/revision/latest?cb=20160425180654",
     "id": 90
   },
   {
     "deck": "Potwory",
-    "card": "Grave Hag",
+    "card": "Baba Cmentarna",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/6/64/Tw3_gwent_card_face_Grave_Hag.png/revision/latest?cb=20160425181214",
     "id": 91
   },
   {
     "deck": "Potwory",
-    "card": "Griffin",
+    "card": "Gryf",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/6/61/Tw3_gwent_card_face_Griffin.png/revision/latest?cb=20160425181505",
     "id": 92
   },
   {
     "deck": "Potwory",
-    "card": "Harpy",
+    "card": "Harpia",
     "location": "Faroe, karczma Harviken, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/e/e1/Tw3_gwent_card_face_Harpy.png/revision/latest?cb=20160415131903",
     "id": 93
   },
   {
     "deck": "Scoia'tael",
-    "card": "Havekar Healer ",
+    "card": "Havekarski Medyk ",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/5/5c/Tw3_gwent_card_face_Havekar_Healer_3.png/revision/latest?cb=20160624161050",
     "id": 94
   },
   {
     "deck": "Scoia'tael",
-    "card": "Havekar Healer ",
+    "card": "Havekarski Medyk ",
     "location": "Karczma Gęsia Pipa, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/4/4f/Tw3_gwent_card_face_Havekar_Healer_2.png/revision/latest?cb=20160624161017",
     "id": 95
   },
   {
     "deck": "Scoia'tael",
-    "card": "Havekar Healer ",
+    "card": "Havekarski Medyk ",
     "location": "Zimorodek, Olivier",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/f/fc/Tw3_gwent_card_face_Havekar_Healer_1.png/revision/latest?cb=20160624160733",
     "id": 96
   },
   {
     "deck": "Scoia'tael",
-    "card": "Havekar Smuggler ",
+    "card": "Havekarskie Wsparcie ",
     "location": "Karczma Siedem kotów, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/ba/Tw3_gwent_card_face_Havekar_Smuggler_3.png/revision/latest?cb=20160624161245",
     "id": 97
   },
   {
     "deck": "Scoia'tael",
-    "card": "Havekar Smuggler ",
+    "card": "Havekarskie Wsparcie ",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/9/98/Tw3_gwent_card_face_Havekar_Smuggler_2.png/revision/latest?cb=20160624161155",
     "id": 98
   },
   {
     "deck": "Scoia'tael",
-    "card": "Havekar Smuggler ",
+    "card": "Havekarskie Wsparcie ",
     "location": "Zimorodek, Olivier",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/f/fa/Tw3_gwent_card_face_Havekar_Smuggler_1.png/revision/latest?cb=20160624161135",
     "id": 99
@@ -771,7 +771,7 @@
   },
   {
     "deck": "Nilfgaard",
-    "card": "Impera Brigade Guard ",
+    "card": "Brygada Impera ",
     "location": "Karczma Gęsia Pipa, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/0/04/Tw3_gwent_card_face_Impera_Brigade_Guard_1.png/revision/latest?cb=20160630130123",
     "id": 110
@@ -841,7 +841,7 @@
   },
   {
     "deck": "Nilfgaard",
-    "card": "Letho of Gulet",
+    "card": "Letho z Gulety",
     "location": "Gwint: Potyczki w Velen, Oreton, Szkutnik",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/d/de/Tw3_gwent_card_face_Letho_of_Gulet.png/revision/latest?cb=20160320210606",
     "id": 120
@@ -911,28 +911,28 @@
   },
   {
     "deck": "Neutralne",
-    "card": "Mysterious Elf",
+    "card": "Tajemniczy Elf",
     "location": "Gwint: Rozgrywki na Skellige, Ard Skellig, Gedyneith, Gremist",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/5/54/Tw3_gwent_card_face_Mysterious_Elf.png/revision/latest?cb=20151026174236",
     "id": 130
   },
   {
     "deck": "Nilfgaard",
-    "card": "Nausicaa Cavalry Rider ",
+    "card": "Kawaleria Nauzicaa",
     "location": "Kasztel Wrońce, Kwatermistrz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/c/c5/Tw3_gwent_card_face_Nausicaa_Cavalry_Rider_1.png/revision/latest?cb=20160630130413",
     "id": 131
   },
   {
     "deck": "Nilfgaard",
-    "card": "Nausicaa Cavalry Rider ",
+    "card": "Kawaleria Nauzicaa",
     "location": "Karczma na Rozstajach, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/c/c5/Tw3_gwent_card_face_Nausicaa_Cavalry_Rider_1.png/revision/latest?cb=20160630130413",
     "id": 132
   },
   {
     "deck": "Nilfgaard",
-    "card": "Nausicaa Cavalry Rider ",
+    "card": "Kawaleria Nauzicaa",
     "location": "Kasztel Wrońce, handlarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/c/c5/Tw3_gwent_card_face_Nausicaa_Cavalry_Rider_1.png/revision/latest?cb=20160630130413",
     "id": 133
@@ -940,7 +940,7 @@
   {
     "deck": "Potwory",
     "card": "Nekker ",
-    "location": "Following the Thread, Faroe, Trottheim, loot Hammonds corpse",
+    "location": "Po nitce do kłębka, Faroe, Trottheim, Ciało Hammonda",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/be/Tw3_gwent_card_face_Nekker_1.png/revision/latest?cb=20160425183820",
     "id": 134
   },
@@ -967,7 +967,7 @@
   },
   {
     "deck": "Potwory",
-    "card": "Plague Maiden",
+    "card": "Morowa Dziewica",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/f/fd/Tw3_gwent_card_face_Plague_Maiden.png/revision/latest?cb=20160425184836",
     "id": 138
@@ -1023,14 +1023,14 @@
   },
   {
     "deck": "Królestwa Północy",
-    "card": "Redanian Foot Soldier ",
+    "card": "Redański piechur",
     "location": "Dostępne na początku gry",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/3/3d/Tw3_gwent_card_face_Redanian_Foot_Soldier_1.png/revision/latest?cb=20160617173920",
     "id": 146
   },
   {
     "deck": "Królestwa Północy",
-    "card": "Redanian Foot Soldier ",
+    "card": "Redański piechur",
     "location": "Dostępne na początku gry",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/b/b6/Tw3_gwent_card_face_Redanian_Foot_Soldier_2.png/revision/latest?cb=20160617173959",
     "id": 147
@@ -1051,7 +1051,7 @@
   },
   {
     "deck": "Nilfgaard",
-    "card": "Rotten Mangonel",
+    "card": "Zdezelowana Mangonela",
     "location": "losowa wygrana",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/1/18/Tw3_gwent_card_face_Rotten_Mangonel.png/revision/latest?cb=20160630154112",
     "id": 150
@@ -1107,7 +1107,7 @@
   },
   {
     "deck": "Nilfgaard",
-    "card": "Siege Engineer",
+    "card": "Saper",
     "location": "Karczma na Rozstajach, karczmarz",
     "image": "https://vignette.wikia.nocookie.net/witcher/images/4/40/Tw3_gwent_card_face_Siege_Engineer.png/revision/latest?cb=20160630130811",
     "id": 158
@@ -1702,7 +1702,7 @@
   },
   {
     "deck": "Skellige",
-    "card": "Clan Dimun Pirate",
+    "card": "Pirat z klanu Dimun",
     "location": "Beauclair, Górne Miasto, Dupont i synowie, sprzedawca",
     "image": "https://static.wikia.nocookie.net/witcher/images/4/4e/Tw3_gwent_card_face_Clan_Dimun_Pirate.png/revision/latest?cb=20160630133530",
     "id": 243
@@ -1730,7 +1730,7 @@
   },
   {
     "deck": "Skellige",
-    "card": "King Bran",
+    "card": "Król Bran",
     "location": "Książęcy Kamerling w Beauclair",
     "image": "https://static.wikia.nocookie.net/witcher/images/9/9f/Tw3_gwent_face_King_Bran.png/revision/latest?cb=20160822104303",
     "id": 247
