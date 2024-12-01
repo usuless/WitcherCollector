@@ -8,8 +8,6 @@ const howManyChecks = defineModel<number>("howManyChecks", { required: true });
 const actualPercentage = computed(() => {
   return Math.floor((100 * howManyChecks.value) / howManyCards.value);
 });
-
-console.log(actualPercentage.value);
 </script>
 
 <template>
