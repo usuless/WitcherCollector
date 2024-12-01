@@ -14,8 +14,6 @@ const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
 const filterChecked: Ref<boolean> = ref(false);
 
-let checkedIDs = useStorage("checkedDecks", ref([]));
-
 const LocalStorageChecks = [
   0, 197, 107, 133, 55, 37, 40, 131, 102, 92, 63, 136, 56, 84, 139, 140, 33,
   128, 142, 88, 6, 7, 9, 10, 14, 15, 24, 43, 49, 59, 75, 81, 104, 105, 114, 115,
@@ -24,7 +22,7 @@ const LocalStorageChecks = [
   16, 19, 39, 76, 198, 27, 96, 121, 99, 189, 187,
 ];
 
-localStorage.setItem("checkedDecks", JSON.stringify(LocalStorageChecks));
+let checkedIDs = useStorage("checkedDecks", ref(LocalStorageChecks));
 
 const filteredDecks = computed(() => {
   if (deckName.value.length === 0) return cards;
