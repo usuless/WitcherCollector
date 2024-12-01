@@ -22,7 +22,7 @@ const decksGrouping: Array<Deck> = [
 ];
 </script>
 <template>
-  <div class="flex items-center">
+  <div class="flex">
     <div class="mr-5">
       <input
         v-model="nameModel"
@@ -30,7 +30,7 @@ const decksGrouping: Array<Deck> = [
         name="card"
         type="text"
       />
-      <label class="ml-3" for="card">Jaka karta?</label>
+      <label class="mx-5" for="card">Jaka karta?</label>
     </div>
     <div class="mr-5">
       <input
@@ -39,7 +39,7 @@ const decksGrouping: Array<Deck> = [
         name="location"
         type="text"
       />
-      <label class="ml-3" for="location">Gdzie szukasz?</label>
+      <label class="mx-5" for="location">Gdzie szukasz?</label>
     </div>
     <div class="grid grid-cols-3">
       <div

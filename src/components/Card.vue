@@ -55,7 +55,7 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
     <img :src="card.image" class="lazyload" alt="" />
     <p class="">{{ card.card }}</p>
     <p class="">{{ card.location }}</p>
-    <p class="">{{ card.deck }}</p>
+    <p class="">{{ card.id }}</p>
     <input
       v-model="check"
       :value="card.id"

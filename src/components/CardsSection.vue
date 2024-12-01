@@ -14,6 +14,10 @@ const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
 const filterChecked: Ref<boolean> = ref(false);
 
+let checkedIDs = useStorage("checkedDecks", ref([]));
+
+/*
+
 const LocalStorageChecks = [
   0, 197, 107, 133, 55, 37, 40, 131, 102, 92, 63, 136, 56, 84, 139, 140, 33,
   128, 142, 88, 6, 7, 9, 10, 14, 15, 24, 43, 49, 59, 75, 81, 104, 105, 114, 115,
@@ -22,9 +26,7 @@ const LocalStorageChecks = [
   16, 19, 39, 76, 198, 27, 96, 121, 99, 189, 187,
 ];
 
-const fixed = JSON.stringify(LocalStorageChecks);
-
-let checkedIDs = useStorage("checkedDecks", ref([fixed]));
+*/
 
 const filteredDecks = computed(() => {
   if (deckName.value.length === 0) return cards;
@@ -64,22 +66,24 @@ watch(checkedIDs, () =>
 );
 </script>
 <template>
-  <SearchSection
-    v-model:location="searchLocation"
-    v-model:name="searchName"
-    v-model:decks="deckName"
-    v-model:filterChecked="filterChecked"
-  />
-  <ProgressCircle
-    v-model:howManyCards="cards.length"
-    v-model:howManyChecks="checkedIDs.length"
-  />
-  <div class="grid grid-cols-3 gap-4">
-    <Card
-      v-for="card in finalFilter"
-      :card="card"
-      v-model:isChecked="checkedIDs"
-      :key="card.id"
+  <div class="flex flex-col items-center justify-center">
+    <SearchSection
+      v-model:location="searchLocation"
+      v-model:name="searchName"
+      v-model:decks="deckName"
+      v-model:filterChecked="filterChecked"
     />
+    <ProgressCircle
+      v-model:howManyCards="cards.length"
+      v-model:howManyChecks="checkedIDs.length"
+    />
+    <div class="grid w-8/12 grid-cols-3 gap-4">
+      <Card
+        v-for="card in finalFilter"
+        :card="card"
+        v-model:isChecked="checkedIDs"
+        :key="card.id"
+      />
+    </div>
   </div>
 </template>
