@@ -22,7 +22,10 @@ const LocalStorageChecks = [
   16, 19, 39, 76, 198, 27, 96, 121, 99, 189, 187,
 ];
 
-let checkedIDs = useStorage("checkedDecks", ref(LocalStorageChecks));
+let checkedIDs = useStorage(
+  "checkedDecks",
+  ref(JSON.stringify(LocalStorageChecks)),
+);
 
 const filteredDecks = computed(() => {
   if (deckName.value.length === 0) return cards;
