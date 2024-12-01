@@ -19,7 +19,7 @@ let checkedIDs = useStorage("checkedDecks", ref([]));
 const filteredDecks = computed(() => {
   if (deckName.value.length === 0) return cards;
 
-  return cards.filter((item) => deckName.value.includes(item.deck));
+  return cards.filter((item: Deck) => deckName.value.includes(item.deck));
 });
 
 const filteredChecks = computed(() => {
@@ -34,13 +34,13 @@ const filteredChecks = computed(() => {
 });
 
 const filteredLocation = computed(() => {
-  return filteredChecks.value.filter((item) =>
+  return filteredChecks.value.filter((item: Deck) =>
     item.location.toLowerCase().includes(searchLocation.value.toLowerCase()),
   );
 });
 
 const filteredNames = computed(() => {
-  return filteredLocation.value.filter((item) =>
+  return filteredLocation.value.filter((item: Deck) =>
     item.card.toLowerCase().includes(searchName.value.toLowerCase()),
   );
 });

@@ -12,7 +12,7 @@
     "@vueuse/core": "^11.1.0",
     "lazyload": "^2.0.0-rc.2",
     "vue": "^3.4.37",
-    "vue3-circle-progress": "^1.0.7"
+    "vue-ellipse-progress": "^2.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",

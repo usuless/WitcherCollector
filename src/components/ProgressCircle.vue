@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { computed } from "vue";
-import CircleProgress from "vue3-circle-progress";
+import { VeProgress } from "vue-ellipse-progress";
 
 const howManyCards = defineModel<number>("howManyCards", { required: true });
 const howManyChecks = defineModel<number>("howManyChecks", { required: true });
 
 const actualPercentage = computed(() => {
-  return (100 * howManyChecks.value) / howManyCards.value;
+  return Math.floor((100 * howManyChecks.value) / howManyCards.value);
 });
 
 console.log(actualPercentage.value);
 </script>
 
 <template>
-  <CircleProgress :percent="actualPercentage" :show-percent="true" />
+  <VeProgress :progress="actualPercentage" :thickness="15" />
 </template>
