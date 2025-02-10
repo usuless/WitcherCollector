@@ -11,5 +11,5 @@ const actualPercentage = computed(() => {
 </script>
 
 <template>
-  <VeProgress :progress="actualPercentage" :thickness="15" />
+  <VeProgress class="my-5" :progress="actualPercentage" :thickness="15" />
 </template>

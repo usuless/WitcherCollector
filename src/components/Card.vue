@@ -50,12 +50,11 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
 <template>
   <div
     :style="backgroundCheck"
-    class="text-yellow my-2 flex flex-col items-center px-10 py-5"
+    class="text-yellow my-2 flex flex-col items-center justify-between px-10 py-5"
   >
     <img :src="card.image" class="lazyload" alt="" />
     <p class="">{{ card.card }}</p>
     <p class="">{{ card.location }}</p>
-    <p class="">{{ card.id }}</p>
     <input
       v-model="check"
       :value="card.id"
