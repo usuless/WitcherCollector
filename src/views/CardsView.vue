@@ -3,6 +3,7 @@ import type { Ref } from "vue";
 import type { Deck } from "../assets/types/types";
 import { computed, ref, watch } from "vue";
 import { refDebounced, useStorage } from "@vueuse/core";
+import HomeView from "./HomeView.vue";
 
 import cards from "../assets/data/cards.json";
 import Card from "../components/Card.vue";
@@ -13,6 +14,7 @@ const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
 const filterChecked: Ref<boolean> = ref(false);
+const model = defineModel();
 
 let checkedIDs = useStorage("checkedDecks", ref([]));
 
@@ -54,18 +56,23 @@ watch(checkedIDs, () =>
 );
 </script>
 <template>
-  <div class="flex flex-col items-center justify-center">
-    <SearchSection
-      v-model:location="searchLocation"
-      v-model:name="searchName"
-      v-model:decks="deckName"
-      v-model:filterChecked="filterChecked"
-    />
+  <div class="flex flex-col items-center justify-between">
+    <div class="">
+      <input type="radio" v-model="model" :value="HomeView" />
+      <SearchSection
+        v-model:location="searchLocation"
+        v-model:name="searchName"
+        v-model:decks="deckName"
+        v-model:filterChecked="filterChecked"
+      />
+    </div>
     <ProgressCircle
       v-model:howManyCards="cards.length"
       v-model:howManyChecks="checkedIDs.length"
     />
-    <div class="grid w-8/12 grid-cols-6 gap-4">
+    <div
+      class="grid w-8/12 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+    >
       <Card
         v-for="card in finalFilter"
         :card="card"

@@ -22,28 +22,28 @@ const decksGrouping: Array<Deck> = [
 ];
 </script>
 <template>
-  <div class="flex">
-    <div class="mr-5">
+  <div class="inline md:flex">
+    <div class="mr-5 flex flex-col">
+      <label class="mx-5 py-4" for="card">Jaka karta?</label>
       <input
         v-model="nameModel"
         class="rounded-3xl p-3"
         name="card"
         type="text"
       />
-      <label class="mx-5" for="card">Jaka karta?</label>
     </div>
-    <div class="mr-5">
+    <div class="mr-5 flex flex-col">
+      <label class="mx-5 py-4" for="location">Gdzie szukasz?</label>
       <input
         v-model="locationModel"
         class="rounded-3xl p-3"
         name="location"
         type="text"
       />
-      <label class="mx-5" for="location">Gdzie szukasz?</label>
     </div>
     <div class="grid grid-cols-3">
       <div
-        class="mx-2 content-between"
+        class="mx-2 my-3 content-between"
         v-for="deck in decksGrouping"
         :key="deck.name"
       >
@@ -59,7 +59,7 @@ const decksGrouping: Array<Deck> = [
         >
       </div>
     </div>
-    <div class="">
+    <div class="py-4">
       <button @click="checkedFilter = !checkedFilter" v-if="checkedFilter">
         Pokaż zdobyte
       </button>
