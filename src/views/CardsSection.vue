@@ -5,9 +5,9 @@ import { computed, ref, watch } from "vue";
 import { refDebounced, useStorage } from "@vueuse/core";
 
 import cards from "../assets/data/cards.json";
-import Card from "./Card.vue";
-import SearchSection from "./SearchSection.vue";
-import ProgressCircle from "./ProgressCircle.vue";
+import Card from "../components/Card.vue";
+import SearchSection from "../components/SearchSection.vue";
+import ProgressCircle from "../components/ProgressCircle.vue";
 
 const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
