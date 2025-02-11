@@ -23,21 +23,19 @@ const decksGrouping: Array<Deck> = [
 </script>
 <template>
   <div class="inline md:flex">
-    <div class="mr-5 flex flex-col">
-      <label class="mx-5 py-4" for="card">Jaka karta?</label>
+    <div class="flex flex-col justify-around">
       <input
         v-model="nameModel"
-        class="rounded-3xl p-3"
+        class="w-fullmax-w-xs input input-bordered"
         name="card"
+        placeholder="Jaka Karta?"
         type="text"
       />
-    </div>
-    <div class="mr-5 flex flex-col">
-      <label class="mx-5 py-4" for="location">Gdzie szukasz?</label>
       <input
         v-model="locationModel"
-        class="rounded-3xl p-3"
+        class="w-fullmax-w-xs input input-bordered"
         name="location"
+        placeholder="Gdzie szukasz?"
         type="text"
       />
     </div>
@@ -52,7 +50,7 @@ const decksGrouping: Array<Deck> = [
           :value="deck.name"
           :id="deck.name"
           v-model="currentDecksModel"
-          class="justify-self-center"
+          class="justify-self- checkbox"
         />
         <label :for="deck.name"
           ><p>{{ deck.name }}</p></label
@@ -60,10 +58,18 @@ const decksGrouping: Array<Deck> = [
       </div>
     </div>
     <div class="py-4">
-      <button @click="checkedFilter = !checkedFilter" v-if="checkedFilter">
+      <button
+        class="btn btn-neutral"
+        @click="checkedFilter = !checkedFilter"
+        v-if="checkedFilter"
+      >
         Pokaż zdobyte
       </button>
-      <button @click="checkedFilter = !checkedFilter" v-else>
+      <button
+        @click="checkedFilter = !checkedFilter"
+        v-else
+        class="btn btn-outline btn-neutral"
+      >
         Ukryj zdobyte
       </button>
     </div>

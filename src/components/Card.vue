@@ -38,9 +38,8 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
   if (check.value.includes(props.card.id)) {
     return {
       backgroundColor: color.value,
-      opacity: 0.2,
+      opacity: 0.6,
       color: "black",
-      fontWeight: "bold",
     };
   } else {
     return { border: `2px solid ${color.value}` };
@@ -50,27 +49,17 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
 <template>
   <div
     :style="backgroundCheck"
-    class="text-yellow my-2 flex flex-col items-center justify-between px-10 py-5"
+    class="my-2 flex flex-col items-center justify-between rounded-xl px-10 py-5 text-xl shadow-xl"
   >
     <img v-lazy="{ src: `${card.image}` }" />
-    <p class="">{{ card.card }}</p>
+    <p class="card-title mb-2">{{ card.card }}</p>
     <p class="">{{ card.location }}</p>
     <input
       v-model="check"
       :value="card.id"
       :id="card.id"
-      class="checkbox"
+      class="checkbox mt-4"
       type="checkbox"
     />
   </div>
 </template>
-<style scoped>
-.checkbox {
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 5px;
-  border: 2px solid #555;
-  @apply my-3;
-}
-</style>
