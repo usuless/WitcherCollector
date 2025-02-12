@@ -1,8 +1,12 @@
 <script setup lang="ts">
-import CardsView from './CardsView.vue';
+import CardsView from "./CardsView.vue";
 const model = defineModel();
 </script>
 <template>
-  <h1>Home Component</h1>
-  <input type="radio" :value="CardsView" v-model="model"></input>
+  <section>
+    <button @click="model = CardsView" class="btn btn-primary">
+      Card Tracker
+    </button>
+  </section>
 </template>
+<style scoped></style>

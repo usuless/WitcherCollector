@@ -58,7 +58,9 @@ watch(checkedIDs, () =>
 <template>
   <div class="flex flex-col items-center justify-between">
     <div class="">
-      <input type="radio" v-model="model" :value="HomeView" />
+      <button class="btn btn-primary mb-5" @click="model = HomeView">
+        Home Page
+      </button>
       <SearchSection
         v-model:location="searchLocation"
         v-model:name="searchName"

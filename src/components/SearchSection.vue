@@ -57,7 +57,7 @@ const decksGrouping: Array<Deck> = [
         >
       </div>
     </div>
-    <div class="py-4">
+    <div class="flex flex-col justify-center">
       <button
         class="btn btn-neutral"
         @click="checkedFilter = !checkedFilter"
