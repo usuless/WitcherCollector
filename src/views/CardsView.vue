@@ -59,7 +59,24 @@ watch(checkedIDs, () =>
   <div class="flex flex-col items-center justify-between">
     <div class="">
       <button class="btn btn-primary mb-5" @click="model = HomeView">
-        Home Page
+        <svg
+          class="h-6 w-6 text-black dark:text-black"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 12h14M5 12l4-4m-4 4 4 4"
+          />
+        </svg>
+        <p class="pb-1 text-xl">Home Page</p>
       </button>
       <SearchSection
         v-model:location="searchLocation"
