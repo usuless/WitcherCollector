@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import ArticleLeft from "../components/ArticleLeft.vue";
+import ArticleRight from "../components/ArticleRight.vue";
 import CardsView from "./CardsView.vue";
+import data from "../assets/data/articles.json";
 const model = defineModel();
 </script>
 <template>
@@ -41,6 +44,15 @@ const model = defineModel();
         </div>
       </div>
     </div>
+    <!-- Królestwa północy -->
+    <ArticleRight :data="data[0]" />
+    <!-- Scoia' tael -->
+    <ArticleLeft :data="data[1]" />
+    <!-- Potwory -->
+    <ArticleRight :data="data[2]" />
+    <!-- Nilfgaard -->
+    <ArticleLeft :data="data[3]" />
+    <!-- Skellige -->
+    <ArticleRight :data="data[4]" />
   </section>
 </template>
-<style scoped></style>
