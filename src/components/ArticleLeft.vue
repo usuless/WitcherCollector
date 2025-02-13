@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { ComputedRef, Ref } from "vue";
-import { computed, ref } from "vue";
+import type { Ref } from "vue";
+import { ref } from "vue";
 const props = defineProps({
   data: { type: Object, required: true },
 });
