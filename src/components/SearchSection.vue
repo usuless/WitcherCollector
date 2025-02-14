@@ -26,14 +26,14 @@ const decksGrouping: Array<Deck> = [
     <div class="flex flex-col justify-around">
       <input
         v-model="nameModel"
-        class="w-fullmax-w-xs input input-bordered"
+        class="w-fullmax-w-xs input input-bordered input-info"
         name="card"
         placeholder="Jaka Karta?"
         type="text"
       />
       <input
         v-model="locationModel"
-        class="w-fullmax-w-xs input input-bordered"
+        class="w-fullmax-w-xs input input-bordered input-info"
         name="location"
         placeholder="Gdzie szukasz?"
         type="text"
@@ -50,7 +50,7 @@ const decksGrouping: Array<Deck> = [
           :value="deck.name"
           :id="deck.name"
           v-model="currentDecksModel"
-          class="justify-self- checkbox"
+          class="checkbox"
         />
         <label :for="deck.name"
           ><p>{{ deck.name }}</p></label
@@ -68,7 +68,7 @@ const decksGrouping: Array<Deck> = [
       <button
         @click="checkedFilter = !checkedFilter"
         v-else
-        class="btn btn-outline btn-neutral"
+        class="btn btn-outline"
       >
         Ukryj zdobyte
       </button>

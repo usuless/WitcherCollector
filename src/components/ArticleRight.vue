@@ -27,32 +27,42 @@ switch (props.data.color) {
 const background = {
   backgroundColor: color.value,
 };
+
+let col = "blue";
 </script>
 <template>
   <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
     <div
-      class="absolute -z-10 w-full rounded-2xl md:h-64"
+      class="absolute -z-10 w-full rounded-2xl md:h-96"
       :style="background"
     ></div>
 
     <div
-      :style="background"
+      :class="`bg-${col}-800`"
       class="w-full rounded-2xl p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
     >
       <img
-        class="object-cover shadow-md md:mx-6 md:h-[16rem] md:rounded-2xl lg:h-[28rem]"
+        class="h-24 w-24 rounded-full object-cover shadow-md md:mx-6 md:h-[32rem] md:w-80 md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"
         :src="data.image"
-        alt="Northern Realms"
+        alt="client photo"
       />
 
-      <div class="flex flex-col justify-center md:mx-6">
-        <p class="text-4xl font-medium tracking-tight text-white">
-          {{ data.title }}
-        </p>
-        <p class="mt-4 text-lg leading-relaxed text-white md:text-2xl">
+      <div class="mt-2 md:mx-6">
+        <div>
+          <p class="text-xl font-medium tracking-tight text-white">
+            {{ data.title }}
+          </p>
+        </div>
+
+        <p class="mt-4 text-lg leading-relaxed text-white md:text-xl">
           {{ data.description }}
         </p>
       </div>
     </div>
   </main>
 </template>
+<style scoped>
+.blue {
+  @apply bg-blue-800;
+}
+</style>

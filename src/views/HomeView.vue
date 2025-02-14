@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import ArticleLeft from "../components/ArticleLeft.vue";
-import ArticleRight from "../components/ArticleRight.vue";
 import CardsView from "./CardsView.vue";
-import data from "../assets/data/articles.json";
 const model = defineModel();
 </script>
 <template>
   <section>
-    <div
+    <header
       class="hero w-screen"
       style="
         background-image: url(https://cdn.mos.cms.futurecdn.net/DyEgjihUZNbqx3XAbRUzSd.jpg.webp);
@@ -43,16 +40,138 @@ const model = defineModel();
           </button>
         </div>
       </div>
-    </div>
+    </header>
+
     <!-- Królestwa północy -->
-    <ArticleRight :data="data[0]" />
+    <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
+      <div class="absolute -z-10 w-full rounded-2xl bg-blue-800 md:h-64"></div>
+
+      <div
+        class="w-full rounded-2xl bg-blue-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
+      >
+        <img
+          class="object-cover shadow-md md:mx-6 md:h-[16rem] md:rounded-2xl lg:h-[28rem]"
+          src="https://gwent.one/image/assets/cardback/default-northern_realms.png"
+          alt="Northern Realms"
+        />
+
+        <div class="flex flex-col justify-center md:mx-6">
+          <p class="text-4xl font-medium tracking-tight text-white">
+            Za Temerię!
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-white md:text-2xl">
+            Potężne maszyny oblężnicze, horda szpiegów i cholernie dobre morale.
+            To jest taktyka Królestw Północy, dzięki której nawet przy pomocy
+            małych oddziałów potrafią pokonać przeciwnika. Daj Foltestowi
+            poprowadzić się do zwycięstwa!
+          </p>
+        </div>
+      </div>
+    </main>
     <!-- Scoia' tael -->
-    <ArticleLeft :data="data[1]" />
+    <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
+      <div class="absolute -z-10 w-full rounded-2xl bg-green-800 md:h-64"></div>
+
+      <div
+        class="w-full rounded-2xl bg-green-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
+      >
+        <div class="flex flex-col justify-center md:mx-6">
+          <p class="text-4xl font-medium tracking-tight text-white">
+            Za Eithne!
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-white md:text-2xl">
+            Najpotężniejsza partyzantka kontynentu zjednoczona, by zdobyć
+            niepodległość dla swojego ludu. Potężne jednostki wspierające i
+            rotacja bohaterów pomoże ci zdobyć przewagę na polu bitwy!
+          </p>
+        </div>
+        <img
+          class="object-cover shadow-md md:mx-6 md:h-[16rem] md:rounded-2xl lg:h-[28rem]"
+          src="https://gwent.one/image/assets/cardback/default-scoiatael.png"
+          alt="Northern Realms"
+        />
+      </div>
+    </main>
     <!-- Potwory -->
-    <ArticleRight :data="data[2]" />
+    <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
+      <div class="absolute -z-10 w-full rounded-2xl bg-red-800 md:h-64"></div>
+
+      <div
+        class="w-full rounded-2xl bg-red-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
+      >
+        <img
+          class="object-cover shadow-md md:mx-6 md:h-[16rem] md:rounded-2xl lg:h-[28rem]"
+          src="https://gwent.one/image/assets/cardback/default-monster.png"
+          alt="Northern Realms"
+        />
+
+        <div class="flex flex-col justify-center md:mx-6">
+          <p class="text-4xl font-medium tracking-tight text-white">
+            Za Dziki Gon!
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-white md:text-2xl">
+            Hordy potworów zalewające arenę potrafią wyprowadzić przeciwnika z
+            równowagi. Tym bardziej, jeżeli towarzyszą im potężne bonusy!
+            Dlatego bez oporów naślij Wiedźmy z Krzywuchowych Moczarów, bądź
+            hordę krwiożerczych wampirów na swojego oponenta. Niech rozpęta się
+            rzeź!
+          </p>
+        </div>
+      </div>
+    </main>
     <!-- Nilfgaard -->
-    <ArticleLeft :data="data[3]" />
+    <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
+      <div
+        class="absolute -z-10 w-full rounded-2xl bg-yellow-600 md:h-64"
+      ></div>
+
+      <div
+        class="w-full rounded-2xl bg-yellow-600 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
+      >
+        <div class="flex flex-col justify-center md:mx-6">
+          <p class="text-4xl font-medium tracking-tight text-white">
+            Za Emhyra!
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-white md:text-2xl">
+            Zorganizowane wojsko, potężni dowódcy i strategiczny balans to klucz
+            do dominacji, a kto może ten klucz zapewnić lepiej, niż biały
+            płomień tańczący na kurchanach wrogów, Emhyr van Emreis!
+          </p>
+        </div>
+        <img
+          class="object-cover shadow-md md:mx-6 md:h-[16rem] md:rounded-2xl lg:h-[28rem]"
+          src="https://gwent.one/image/assets/cardback/default-nilfgaard.png"
+          alt="Northern Realms"
+        />
+      </div>
+    </main>
     <!-- Skellige -->
-    <ArticleRight :data="data[4]" />
+    <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
+      <div
+        class="absolute -z-10 w-full rounded-2xl bg-violet-800 md:h-64"
+      ></div>
+
+      <div
+        class="w-full rounded-2xl bg-violet-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
+      >
+        <img
+          class="object-cover shadow-md md:mx-6 md:h-[16rem] md:rounded-2xl lg:h-[28rem]"
+          src="https://gwent.one/image/assets/cardback/default-skellige.png"
+          alt="Northern Realms"
+        />
+
+        <div class="flex flex-col justify-center md:mx-6">
+          <p class="text-4xl font-medium tracking-tight text-white">
+            Za Króla Brana!
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-white md:text-2xl">
+            Lodowy klimat Skellige nie przeszkadza jego mieszkańcom na
+            posiadanie rozgrzanej krwi, którą przelewają od wieków stając się
+            przy tym mistrzami w bitewnym fachu. Teraz pod wodzą Caerys,
+            potężniejsi bardziej niż kiedykolwiek stawią czoła każdemu wyzwaniu!
+          </p>
+        </div>
+      </div>
+    </main>
   </section>
 </template>

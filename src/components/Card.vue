@@ -15,22 +15,22 @@ let color: Ref<string> = ref("");
 
 switch (props.card.deck) {
   case "Neutralne":
-    color.value = "white";
+    color.value = "#cbd5e1";
     break;
   case "Potwory":
-    color.value = "red";
+    color.value = "#991b1b";
     break;
   case "Królestwa Północy":
-    color.value = "blue";
+    color.value = "#1e40af";
     break;
   case "Scoia'tael":
-    color.value = "green";
+    color.value = "#3f6212";
     break;
   case "Nilfgaard":
-    color.value = "yellow";
+    color.value = "#ca8a04";
     break;
   case "Skellige":
-    color.value = "violet";
+    color.value = "#6b21a8";
     break;
 }
 
@@ -38,7 +38,6 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
   if (check.value.includes(props.card.id)) {
     return {
       backgroundColor: color.value,
-      opacity: 0.6,
       color: "black",
     };
   } else {
@@ -58,7 +57,7 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
       v-model="check"
       :value="card.id"
       :id="card.id"
-      class="checkbox mt-4"
+      class="checkbox-accent checkbox mt-4"
       type="checkbox"
     />
   </div>

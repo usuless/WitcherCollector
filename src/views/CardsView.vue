@@ -60,7 +60,7 @@ watch(checkedIDs, () =>
     <div class="">
       <button class="btn btn-primary mb-5" @click="model = HomeView">
         <svg
-          class="h-6 w-6 text-black dark:text-black"
+          class="h-6 w-6 text-white dark:text-white"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
