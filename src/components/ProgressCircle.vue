@@ -11,5 +11,9 @@ const actualPercentage = computed(() => {
 </script>
 
 <template>
-  <VeProgress class="my-5" :progress="actualPercentage" :thickness="15" />
+  <VeProgress class="my-5" :progress="actualPercentage" :thickness="15">
+    <template #default="{ counterTick }">
+      <P class="text-2xl"> {{ counterTick.currentValue }}% </P>
+    </template>
+  </VeProgress>
 </template>

@@ -15,22 +15,22 @@ let color: Ref<string> = ref("");
 
 switch (props.card.deck) {
   case "Neutralne":
-    color.value = "#cbd5e1";
+    color.value = "rgba(203, 213, 225, 0.5)";
     break;
   case "Potwory":
-    color.value = "#991b1b";
+    color.value = "rgba(153, 27, 27, 0.5)";
     break;
   case "Królestwa Północy":
-    color.value = "#1e40af";
+    color.value = "rgba(30,64,175,0.5)";
     break;
   case "Scoia'tael":
-    color.value = "#3f6212";
+    color.value = "rgba(63,98,18,0.5)";
     break;
   case "Nilfgaard":
-    color.value = "#ca8a04";
+    color.value = "rgba(202,138,4,0.5)";
     break;
   case "Skellige":
-    color.value = "#6b21a8";
+    color.value = "rgba(107,33,168,0.5)";
     break;
 }
 
@@ -38,7 +38,8 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
   if (check.value.includes(props.card.id)) {
     return {
       backgroundColor: color.value,
-      color: "black",
+      border: `2px solid ${color.value}`,
+      textShadow: "1px 1px 5px rgba(0,0,0,0.6)",
     };
   } else {
     return { border: `2px solid ${color.value}` };
@@ -48,7 +49,7 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
 <template>
   <div
     :style="backgroundCheck"
-    class="my-2 flex flex-col items-center justify-between rounded-xl px-10 py-5 text-xl shadow-xl"
+    class="my-2 flex flex-col items-center justify-between rounded-xl px-10 py-5 text-xl shadow-md"
   >
     <img v-lazy="{ src: `${card.image}` }" />
     <p class="card-title mb-2">{{ card.card }}</p>
