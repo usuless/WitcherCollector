@@ -19,9 +19,9 @@ const model = defineModel();
             wszystkie karty za pomocą naszej strony!
           </p>
           <button @click="model = CardsView" class="btn btn-primary">
-            <p class="text-lg">Karty</p>
+            <p class="mb-2 text-2xl">Karty</p>
             <svg
-              class="h-6 w-6 text-gray-800 dark:text-black"
+              class="h-8 w-8 text-gray-400"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -44,7 +44,9 @@ const model = defineModel();
   </section>
   <!-- Królestwa północy -->
   <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
-    <div class="absolute -z-10 w-full rounded-2xl bg-blue-800 md:h-64"></div>
+    <div
+      class="absolute -z-10 w-full rounded-2xl bg-blue-800 opacity-60 md:h-64"
+    ></div>
 
     <div
       class="w-full rounded-2xl bg-blue-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
@@ -70,7 +72,9 @@ const model = defineModel();
   </main>
   <!-- Scoia' tael -->
   <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
-    <div class="absolute -z-10 w-full rounded-2xl bg-green-800 md:h-64"></div>
+    <div
+      class="absolute -z-10 w-full rounded-2xl bg-green-800 opacity-60 md:h-64"
+    ></div>
 
     <div
       class="w-full rounded-2xl bg-green-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
@@ -92,7 +96,9 @@ const model = defineModel();
   </main>
   <!-- Potwory -->
   <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
-    <div class="absolute -z-10 w-full rounded-2xl bg-red-800 md:h-64"></div>
+    <div
+      class="absolute -z-10 w-full rounded-2xl bg-red-800 opacity-60 md:h-64"
+    ></div>
 
     <div
       class="w-full rounded-2xl bg-red-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
@@ -118,7 +124,9 @@ const model = defineModel();
   </main>
   <!-- Nilfgaard -->
   <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
-    <div class="absolute -z-10 w-full rounded-2xl bg-yellow-600 md:h-64"></div>
+    <div
+      class="absolute -z-10 w-full rounded-2xl bg-yellow-600 opacity-60 md:h-64"
+    ></div>
 
     <div
       class="w-full rounded-2xl bg-yellow-600 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
@@ -140,7 +148,9 @@ const model = defineModel();
   </main>
   <!-- Skellige -->
   <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
-    <div class="absolute -z-10 w-full rounded-2xl bg-violet-800 md:h-64"></div>
+    <div
+      class="absolute -z-10 w-full rounded-2xl bg-violet-800 opacity-60 md:h-64"
+    ></div>
 
     <div
       class="w-full rounded-2xl bg-violet-800 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
