@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { shallowRef } from "vue";
 import HomeView from "./views/HomeView.vue";
+import LoginView from "./views/LoginView.vue";
 
-let currentComponent = shallowRef(HomeView);
+let currentComponent = shallowRef(LoginView);
 </script>
 <template>
   <component v-model="currentComponent" :is="currentComponent"></component>
