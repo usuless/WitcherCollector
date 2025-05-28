@@ -3,7 +3,7 @@ import { shallowRef } from "vue";
 import HomeView from "./views/HomeView.vue";
 import LoginView from "./views/LoginView.vue";
 
-let currentComponent = shallowRef(LoginView);
+let currentComponent = shallowRef(HomeView);
 </script>
 <template>
   <component v-model="currentComponent" :is="currentComponent"></component>
