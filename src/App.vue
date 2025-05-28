@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { shallowRef } from "vue";
 import HomeView from "./views/HomeView.vue";
-import LoginView from "./views/LoginView.vue";
 
 let currentComponent = shallowRef(HomeView);
 </script>
