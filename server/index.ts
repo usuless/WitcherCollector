@@ -6,6 +6,10 @@ server.get("/ping", async (req, repl) => {
   return "pong\n";
 });
 
+server.get("/", async (req, repl) => {
+  return { body: "data" };
+});
+
 server.listen({ port: 8000 }, (err, address) => {
   if (err) {
     console.error(err);
