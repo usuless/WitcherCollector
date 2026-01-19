@@ -45,8 +45,35 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
     return { border: `2px solid ${color.value}` };
   }
 });
+
+const handleCheck = () => {
+  if (check.value.includes(props.card.id)) {
+    check.value.filter((val) => val == !props.card.id);
+  } else {
+    check.value.push(props.card.id);
+  }
+};
 </script>
 <template>
+  <div
+    :style="backgroundCheck"
+    class="my-2 flex items-center justify-between rounded-xl px-10 py-5 text-xl shadow-md"
+    @click="handleCheck"
+  >
+    <input
+      v-model="check"
+      :value="card.id"
+      :id="card.id"
+      class="checkbox-accent checkbox mt-4"
+      type="checkbox"
+    />
+    <p class="card-title mb-2">{{ card.card }}</p>
+    <p class="">{{ card.location }}</p
+      {{ check }}>
+  </div>
+</template>
+
+<!-- <template>
   <div
     :style="backgroundCheck"
     class="my-2 flex flex-col items-center justify-between rounded-xl px-10 py-5 text-xl shadow-md"
@@ -62,4 +89,4 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
       type="checkbox"
     />
   </div>
-</template>
+</template> -->
