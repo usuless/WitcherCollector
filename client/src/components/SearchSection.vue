@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineModel } from "vue";
-
 const locationModel = defineModel<string>("location", { required: true });
 const nameModel = defineModel<string>("name", { required: true });
 const currentDecksModel = defineModel<Array<string>>("decks", {
@@ -20,6 +18,28 @@ const decksGrouping: Array<Deck> = [
   { name: "Królestwa Północy" },
   { name: "Potwory" },
 ];
+
+const handleTest = async () => {
+  const url = "http://127.0.0.1:3000/";
+  try {
+    const response = await fetch(url + "auth/register", {
+      method: "POST",
+      body: JSON.stringify({
+        login: "kuba",
+        password: "blablabla",
+        mail: "kontokubyxd@gmail.com",
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    if (!response.ok) {
+      throw new Error(`Response Status ${response.status}`);
+    }
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {}
+};
 </script>
 <template>
   <div class="inline md:flex">
@@ -73,5 +93,6 @@ const decksGrouping: Array<Deck> = [
         Ukryj zdobyte
       </button>
     </div>
+    <button @click="handleTest">Test</button>
   </div>
 </template>

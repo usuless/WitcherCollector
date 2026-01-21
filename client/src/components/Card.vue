@@ -46,46 +46,46 @@ const backgroundCheck: ComputedRef<{}> = computed(() => {
   }
 });
 
-const handleCheck = () => {
-  if (check.value.includes(props.card.id)) {
-    check.value = check.value.filter((val) => val !== props.card.id);
-  } else {
-    check.value.push(props.card.id);
-  }
+const modalRef = ref<HTMLDialogElement | null>(null);
+
+const openModal = () => {
+  modalRef.value?.showModal();
 };
 </script>
+
 <template>
   <div
     :style="backgroundCheck"
-    class="my-2 flex items-center justify-between rounded-xl px-10 py-5 text-xl shadow-md"
-    @click="handleCheck"
+    class="my-2 grid grid-cols-5 text-start w-8/12 rounded-xl px-10 py-5 text-xl shadow-md cursor-pointer"
+    @click="openModal"
   >
-    <p class="card-title mb-2">{{ card.card }}</p>
-    <p class="">{{ card.location }}</p>
-    <input
-      v-model="check"
-      :value="card.id"
-      :id="card.id"
-      class="checkbox-accent checkbox mt-4"
-      type="checkbox"
-    />
-  </div>
-</template>
+    <p class="card-title mb-2 font-bold col-span-2">{{ card.card }}</p>
+    <p class="col-span-2">{{ card.location }}</p>
 
-<!-- <template>
-  <div
-    :style="backgroundCheck"
-    class="my-2 flex flex-col items-center justify-between rounded-xl px-10 py-5 text-xl shadow-md"
-  >
-    <img v-lazy="{ src: `${card.image}` }" />
-    <p class="card-title mb-2">{{ card.card }}</p>
-    <p class="">{{ card.location }}</p>
     <input
       v-model="check"
       :value="card.id"
-      :id="card.id"
-      class="checkbox-accent checkbox mt-4"
+      class="checkbox-accent checkbox size-10 justify-self-end"
       type="checkbox"
+      @click.stop
     />
   </div>
-</template> -->
+
+  <dialog ref="modalRef" class="modal">
+    <div class="modal-box grid grid-cols-2">
+      <img :src="card.image" alt="" />
+      <div class="">
+        <h3 class="text-lg font-bold">Karta: {{ card.card }}</h3>
+        <p class="py-4">Lokalizacja: {{ card.location }}</p>
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Zamknij</button>
+        </form>
+      </div>
+    </div>
+    <form method="dialog" class="modal-backdrop">
+      <button class="bg-inherit">close</button>
+    </form>
+  </dialog>
+</template>

@@ -89,7 +89,7 @@ watch(checkedIDs, () =>
       v-model:howManyCards="cards.length"
       v-model:howManyChecks="checkedIDs.length"
     />
-    <div class="flex flex-col">
+    <div class="flex flex-col items-center justify-center">
       <Card
         v-for="card in finalFilter"
         :card="card"
@@ -99,5 +99,3 @@ watch(checkedIDs, () =>
     </div>
   </div>
 </template>
-
-<!-- class="grid w-8/12 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5" -->
