@@ -56,7 +56,7 @@ const openModal = () => {
 <template>
   <div
     :style="backgroundCheck"
-    class="my-2 grid grid-cols-5 text-start w-8/12 rounded-xl px-10 py-5 text-xl shadow-md cursor-pointer"
+    class="my-4 grid grid-cols-5 text-start w-8/12 rounded-xl px-10 py-5 text-xl shadow-md cursor-pointer"
     @click="openModal"
   >
     <p class="card-title mb-2 font-bold col-span-2">{{ card.card }}</p>

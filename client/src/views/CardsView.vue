@@ -9,6 +9,7 @@ import cards from "../assets/data/cards.json";
 import Card from "../components/Card.vue";
 import SearchSection from "../components/SearchSection.vue";
 import ProgressCircle from "../components/ProgressCircle.vue";
+import { RouterLink } from "vue-router";
 
 const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
@@ -58,26 +59,28 @@ watch(checkedIDs, () =>
 <template>
   <div class="flex flex-col items-center justify-between">
     <div class="">
-      <button class="btn btn-primary mb-5" @click="model = HomeView">
-        <svg
-          class="h-6 w-6 text-white dark:text-white"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 12h14M5 12l4-4m-4 4 4 4"
-          />
-        </svg>
-        <p class="pb-1 text-xl">Home Page</p>
-      </button>
+      <RouterLink to="/">
+        <button class="btn btn-primary mb-5" @click="model = HomeView">
+          <svg
+            class="h-6 w-6 text-white dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 12h14M5 12l4-4m-4 4 4 4"
+            />
+          </svg>
+          <p class="pb-1 text-xl">Home Page</p>
+        </button>
+      </RouterLink>
       <SearchSection
         v-model:location="searchLocation"
         v-model:name="searchName"
