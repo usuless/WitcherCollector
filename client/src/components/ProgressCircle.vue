@@ -9,7 +9,6 @@ const actualPercentage = computed(() => {
   return Math.floor((100 * howManyChecks.value) / howManyCards.value);
 });
 </script>
-
 <template>
   <VeProgress class="my-5" :progress="actualPercentage" :thickness="15">
     <template #default="{ counterTick }">

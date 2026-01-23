@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import type { Ref } from "vue";
 import type { Deck } from "../assets/types/types";
-import { computed, ref, watch } from "vue";
+import { computed, onBeforeMount, ref, watch } from "vue";
 import { refDebounced, useStorage } from "@vueuse/core";
 import HomeView from "./HomeView.vue";
-
-import cards from "../assets/data/cards.json";
+import { handleGetCards } from "../controllers/cards";
 import Card from "../components/Card.vue";
 import SearchSection from "../components/SearchSection.vue";
 import ProgressCircle from "../components/ProgressCircle.vue";
@@ -16,13 +15,17 @@ const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
 const filterChecked: Ref<boolean> = ref(false);
 const model = defineModel();
+const tempCards: Ref<Array<Deck>> | undefined = ref([]);
+const cardsNum = 252;
 
 let checkedIDs = useStorage("checkedDecks", ref([]));
 
 const filteredDecks = computed(() => {
-  if (deckName.value.length === 0) return cards;
+  if (deckName.value.length === 0) return tempCards!.value;
 
-  return cards.filter((item: Deck) => deckName.value.includes(item.deck));
+  return tempCards!.value.filter((item: Deck) =>
+    deckName.value.includes(item.deck),
+  );
 });
 
 const filteredChecks = computed(() => {
@@ -31,7 +34,6 @@ const filteredChecks = computed(() => {
   }
 
   return filteredDecks.value.filter(
-    // @ts-ignore
     (item) => !(checkedIDs.value as Array<number>).includes(item.id),
   );
 });
@@ -48,13 +50,18 @@ const filteredNames = computed(() => {
   );
 });
 
-const finalFilter: Ref<Array<Deck>> = ref(cards);
+//@ts-ignore
+const finalFilter: Ref<Array<Deck>> = ref();
 
 const debounced = refDebounced(filteredNames, 700);
 watch(debounced, () => (finalFilter.value = filteredNames.value));
 watch(checkedIDs, () =>
   localStorage.setItem("checkedDecks", JSON.stringify(checkedIDs.value)),
 );
+
+onBeforeMount(async () => {
+  finalFilter.value = await handleGetCards();
+});
 </script>
 <template>
   <div class="flex flex-col items-center justify-between">
@@ -89,7 +96,7 @@ watch(checkedIDs, () =>
       />
     </div>
     <ProgressCircle
-      v-model:howManyCards="cards.length"
+      v-model:howManyCards="cardsNum"
       v-model:howManyChecks="checkedIDs.length"
     />
     <div class="flex flex-col items-center justify-center">
