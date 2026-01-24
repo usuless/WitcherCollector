@@ -3,7 +3,6 @@ import type { Ref } from "vue";
 import type { Deck } from "../assets/types/types";
 import { computed, onBeforeMount, ref, watch } from "vue";
 import { refDebounced, useStorage } from "@vueuse/core";
-import HomeView from "./HomeView.vue";
 import { handleGetCards } from "../controllers/cards";
 import Card from "../components/Card.vue";
 import SearchSection from "../components/SearchSection.vue";
@@ -14,7 +13,6 @@ const searchLocation: Ref<string> = ref("");
 const searchName: Ref<string> = ref("");
 const deckName: Ref<Array<string>> = ref([]);
 const filterChecked: Ref<boolean> = ref(false);
-const model = defineModel();
 const tempCards: Ref<Array<Deck>> | undefined = ref([]);
 const cardsNum = 252;
 
@@ -65,36 +63,34 @@ onBeforeMount(async () => {
 </script>
 <template>
   <div class="flex flex-col items-center justify-between">
-    <div class="">
-      <RouterLink to="/">
-        <button class="btn btn-primary mb-5" @click="model = HomeView">
-          <svg
-            class="h-6 w-6 text-white dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 12h14M5 12l4-4m-4 4 4 4"
-            />
-          </svg>
-          <p class="pb-1 text-xl">Home Page</p>
-        </button>
-      </RouterLink>
-      <SearchSection
-        v-model:location="searchLocation"
-        v-model:name="searchName"
-        v-model:decks="deckName"
-        v-model:filterChecked="filterChecked"
-      />
-    </div>
+    <RouterLink to="/">
+      <button class="btn btn-primary mb-5">
+        <svg
+          class="h-6 w-6 text-white dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 12h14M5 12l4-4m-4 4 4 4"
+          />
+        </svg>
+        <p class="pb-1 text-xl">Home Page</p>
+      </button>
+    </RouterLink>
+    <SearchSection
+      v-model:location="searchLocation"
+      v-model:name="searchName"
+      v-model:decks="deckName"
+      v-model:filterChecked="filterChecked"
+    />
     <ProgressCircle
       v-model:howManyCards="cardsNum"
       v-model:howManyChecks="checkedIDs.length"
