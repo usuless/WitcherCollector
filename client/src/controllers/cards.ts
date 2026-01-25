@@ -1,7 +1,8 @@
+const BASIC_URL = "http://127.0.0.1:3000/api/cards";
+
 export const handleGetCards = async () => {
-  const url = "http://127.0.0.1:3000/api/cards";
   try {
-    const response = await fetch(url);
+    const response = await fetch(BASIC_URL);
 
     if (!response.ok) {
       throw new Error(`${response.status}`);
@@ -16,7 +17,7 @@ export const handleGetCards = async () => {
 
 export const handlePutCards = async (cardId: number, userId: number) => {
   try {
-    const response = await fetch("http://localhost:3000/cards/add", {
+    const response = await fetch(BASIC_URL + "/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

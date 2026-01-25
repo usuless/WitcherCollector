@@ -1,11 +1,12 @@
+const BASIC_URL = "http://127.0.0.1:3000";
+
 export const handleRegister = async (
   login: string,
   password: string,
   mail: string,
 ) => {
-  const url = "http://127.0.0.1:3000/";
   try {
-    const response = await fetch(url + "auth/register", {
+    const response = await fetch(BASIC_URL + "auth/register", {
       method: "POST",
       body: JSON.stringify({
         login: login,
@@ -25,9 +26,8 @@ export const handleRegister = async (
 };
 
 export const handleLogin = async (login: string, password: string) => {
-  const url = "http://127.0.0.1:3000/";
   try {
-    const response = await fetch(url + "auth/login", {
+    const response = await fetch(BASIC_URL + "/login", {
       method: "POST",
       body: JSON.stringify({
         login: login,
