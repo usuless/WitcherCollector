@@ -45,6 +45,7 @@ export default async function authRoutes(fastify: FastifyInstance) {
       [login],
     );
     const user = result.rows[0];
+    const userId = user.id;
 
     if (!user) {
       return reply.status(401).send({ error: "Nieprawidłowy login lub hasło" });
@@ -64,6 +65,6 @@ export default async function authRoutes(fastify: FastifyInstance) {
       { expiresIn: "1h" },
     );
 
-    return { token };
+    return { token, userId };
   });
 }
