@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 import type { ComputedRef, Ref } from "vue";
+import { handlePutCards } from "../controllers/cards";
 const props = defineProps({
   card: {
     type: Object,
@@ -33,6 +34,15 @@ switch (props.card.deck) {
     color.value = "rgba(107,33,168,0.5)";
     break;
 }
+
+const handleCheck = async () => {
+  const userId = localStorage.getItem("userId");
+  console.log(userId);
+
+  if (userId) {
+    handlePutCards(props.card.id, Number(userId));
+  }
+};
 
 const backgroundCheck: ComputedRef<{}> = computed(() => {
   if (check.value.includes(props.card.id)) {
@@ -67,7 +77,7 @@ const openModal = () => {
       :value="card.id"
       class="checkbox-accent checkbox size-10 justify-self-end"
       type="checkbox"
-      @click.stop
+      @click="handleCheck"
     />
   </div>
 

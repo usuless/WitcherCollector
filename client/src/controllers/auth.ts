@@ -1,4 +1,4 @@
-const BASIC_URL = "http://127.0.0.1:3000";
+const BASIC_URL = "http://127.0.0.1:3000/auth/";
 
 export const handleRegister = async (
   login: string,
@@ -6,7 +6,7 @@ export const handleRegister = async (
   mail: string,
 ) => {
   try {
-    const response = await fetch(BASIC_URL + "auth/register", {
+    const response = await fetch(BASIC_URL + "register", {
       method: "POST",
       body: JSON.stringify({
         login: login,
@@ -27,7 +27,7 @@ export const handleRegister = async (
 
 export const handleLogin = async (login: string, password: string) => {
   try {
-    const response = await fetch(BASIC_URL + "/login", {
+    const response = await fetch(BASIC_URL + "login", {
       method: "POST",
       body: JSON.stringify({
         login: login,
@@ -41,6 +41,6 @@ export const handleLogin = async (login: string, password: string) => {
       throw new Error(`Response Status ${response.status}`);
     }
     const result = await response.json();
-    console.log(result);
+    localStorage.setItem("userId", result.userId);
   } catch (error) {}
 };

@@ -17,7 +17,7 @@ export const handleGetCards = async () => {
 
 export const handlePutCards = async (cardId: number, userId: number) => {
   try {
-    const response = await fetch(BASIC_URL + "/add", {
+    const response = await fetch(BASIC_URL + "/toggle", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,13 +28,11 @@ export const handlePutCards = async (cardId: number, userId: number) => {
       }),
     });
 
-    if (response.ok) {
-      const data = await response.json();
-      console.log("Sukces:", data.message);
-      alert("Karta dodana do Twojej kolekcji!");
-    } else {
+    if (!response.ok) {
       console.error("Błąd serwera");
     }
+    const data = await response.json();
+    console.log("Sukces:", data.message);
   } catch (error) {
     console.error("Błąd sieci:", error);
   }

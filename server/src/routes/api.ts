@@ -23,25 +23,48 @@ export default async function apiRoutes(fastify: FastifyInstance) {
     }
   });
 
-  fastify.post<{ Body: addCardBody }>("/add", async (request, reply) => {
-    const { userId, cardId } = request.body;
-    let client;
+  fastify.post<{ Body: addCardBody }>(
+    "/cards/toggle",
+    async (request, reply) => {
+      const { userId, cardId } = request.body;
+      let client;
 
-    try {
-      client = await fastify.pg.connect();
-      await client.query(
-        "INSERT INTO user_cards (user_id, card_id) VALUES ($1, $2) ON CONFLICT DO NOTHING",
-        [userId, cardId],
-      );
-      return { status: "success", message: "Karta dodana do kolekcji" };
-    } catch (err) {
-      return reply.status(500).send(err);
-    } finally {
-      if (client) client.release();
-    }
-  });
+      try {
+        client = await fastify.pg.connect();
 
-  fastify.get("/collection/:userId", async (request, reply) => {
+        const query = `
+      WITH deleted AS (
+        DELETE FROM user_cards 
+        WHERE user_id = $1 AND card_id = $2 
+        RETURNING *
+      )
+      INSERT INTO user_cards (user_id, card_id)
+      SELECT $1, $2
+      WHERE NOT EXISTS (SELECT 1 FROM deleted);
+    `;
+
+        const result = await client.query(query, [userId, cardId]);
+
+        const isAdded = result.rowCount > 0;
+
+        return {
+          status: "success",
+          message: isAdded ? "Karta dodana" : "Karta usunięta",
+        };
+      } catch (err) {
+        fastify.log.error(err);
+        return reply
+          .status(500)
+          .send({ status: "error", message: "Błąd bazy danych" });
+      } finally {
+        if (client) {
+          client.release();
+        }
+      }
+    },
+  );
+
+  fastify.get("/cards/:userId", async (request, reply) => {
     //@ts-ignore
     const { userId } = request.params;
     let client;
@@ -54,14 +77,16 @@ export default async function apiRoutes(fastify: FastifyInstance) {
       INNER JOIN user_cards uc ON c.id = uc.card_id
       WHERE uc.user_id = $1
       ORDER BY uc.acquired_at DESC
-    `;
+      `;
 
       const { rows } = await client.query(query, [userId]);
       return rows;
     } catch (err) {
       return reply.status(500).send(err);
     } finally {
-      if (client) client.release();
+      if (client) {
+        client.release();
+      }
     }
   });
 }
