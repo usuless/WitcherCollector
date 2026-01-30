@@ -37,3 +37,28 @@ export const handlePutCards = async (cardId: number, userId: number) => {
     console.error("Błąd sieci:", error);
   }
 };
+
+export const handleGetAcquiredCards = async (userId: number) => {
+  try {
+    const response = await fetch(BASIC_URL + "/" + userId, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userId: Number,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error("Coś poszło nie tak");
+    }
+
+    const data = await response.json();
+
+    console.log(data.message);
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+};

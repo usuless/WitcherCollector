@@ -3,7 +3,7 @@ import type { Ref } from "vue";
 import type { Deck } from "../assets/types/types";
 import { computed, onBeforeMount, ref, watch } from "vue";
 import { refDebounced, useStorage } from "@vueuse/core";
-import { handleGetCards } from "../controllers/cards";
+import { handleGetCards, handleGetAcquiredCards } from "../controllers/cards";
 import Card from "../components/Card.vue";
 import SearchSection from "../components/SearchSection.vue";
 import ProgressCircle from "../components/ProgressCircle.vue";
@@ -59,6 +59,7 @@ watch(checkedIDs, () =>
 
 onBeforeMount(async () => {
   finalFilter.value = await handleGetCards();
+  console.log(handleGetAcquiredCards(7));
 });
 </script>
 <template>
