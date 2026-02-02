@@ -62,3 +62,7 @@ export const handleGetAcquiredCards = async (userId: number) => {
     console.error(error);
   }
 };
+
+export const handleCardInfos = async (deck: string, userId: number) => {
+  return 0;
+};
