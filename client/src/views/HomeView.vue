@@ -1,10 +1,15 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import HeaderComponent from "../components/HeaderComponent.vue";
 import LoginView from "./LoginView.vue";
+import UserView from "./UserView.vue";
+
+const isLoggedIn = ref(false);
 </script>
 <template>
   <HeaderComponent />
-  <LoginView />
+  <LoginView v-if="isLoggedIn" />
+  <UserView v-else />
 </template>
 <style>
 .url {
