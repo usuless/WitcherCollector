@@ -63,6 +63,26 @@ export const handleGetAcquiredCards = async (userId: number) => {
   }
 };
 
-export const handleCardInfos = async (deck: string, userId: number) => {
-  return 0;
+export const handleCardInfos = async (userId: number) => {
+  try {
+    const response = await fetch(BASIC_URL + "/" + userId + "/details", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userId: userId,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error("coś poszło nie tak");
+    }
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
 };
