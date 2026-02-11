@@ -77,7 +77,7 @@ const openModal = () => {
       :value="card.id"
       class="checkbox-accent checkbox size-10 justify-self-end"
       type="checkbox"
-      @click="handleCheck"
+      @click.stop="handleCheck"
     />
   </div>
 

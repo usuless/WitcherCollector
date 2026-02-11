@@ -89,4 +89,33 @@ export default async function apiRoutes(fastify: FastifyInstance) {
       }
     }
   });
+
+  fastify.post("/cards/:userId/details", async (request, reply) => {
+    //@ts-ignore
+    const { userId } = request.params;
+    let client;
+
+    try {
+      client = await fastify.pg.connect();
+      const query = `
+            SELECT 
+                gc.deck, 
+                COUNT(*) AS count
+            FROM user_cards uc
+            JOIN gwent_cards gc ON uc.card_id = gc.id
+            WHERE uc.user_id = $1
+            GROUP BY gc.deck
+            ORDER BY count DESC;
+            `;
+
+      const { rows } = await client.query(query, [userId]);
+      return rows;
+    } catch (error) {
+      return reply.status(500).send(error);
+    } finally {
+      if (client) {
+        client.release();
+      }
+    }
+  });
 }

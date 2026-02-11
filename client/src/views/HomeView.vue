@@ -4,12 +4,12 @@ import HeaderComponent from "../components/HeaderComponent.vue";
 import LoginView from "./LoginView.vue";
 import UserView from "./UserView.vue";
 
-const isLoggedIn = ref(false);
+const isLoggedIn = ref(true);
 </script>
 <template>
   <HeaderComponent />
-  <LoginView v-if="isLoggedIn" />
-  <UserView v-else />
+  <UserView v-if="isLoggedIn" />
+  <LoginView v-else />
 </template>
 <style>
 .url {
