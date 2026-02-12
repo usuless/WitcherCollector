@@ -4,6 +4,7 @@ import { VeProgress } from "vue-ellipse-progress";
 
 const howManyCards = defineModel<number>("howManyCards", { required: true });
 const howManyChecks = defineModel<number>("howManyChecks", { required: true });
+const decksName = defineModel<string>("decks-name", { required: true });
 
 const actualPercentage = computed(() => {
   return Math.floor((100 * howManyChecks.value) / howManyCards.value);

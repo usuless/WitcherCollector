@@ -6,8 +6,8 @@ import type { Ref } from "vue";
 
 interface stat {
   deck: string;
-  count: number;
-  maxCount: number;
+  total_count: number;
+  owned_count: number;
 }
 
 const stats: Ref<stat[]> = ref([]);
@@ -17,10 +17,14 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <ProgressCircle
-    v-for="stat in stats"
-    :how-many-cards="stat.maxCount"
-    :how-many-checks="stat.count"
-    :decks-name="stat.deck"
-  />
+  <div class="grid grid-col-3">
+    <div class="" v-for="stat in stats">
+      <ProgressCircle
+        :how-many-cards="stat.total_count"
+        :how-many-checks="stat.owned_count"
+        :decks-name="stat.deck"
+      />
+      <p>{{ stat.deck }}</p>
+    </div>
+  </div>
 </template>
