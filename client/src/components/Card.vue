@@ -2,6 +2,8 @@
 import { ref, computed } from "vue";
 import type { ComputedRef, Ref } from "vue";
 import { handlePutCards } from "../controllers/cards";
+import { colorCheck } from "../scripts/colorCheck";
+
 const props = defineProps({
   card: {
     type: Object,
@@ -12,28 +14,7 @@ const check: Ref<Array<string>> = defineModel<Array<string>>("isChecked", {
   required: true,
 });
 
-let color: Ref<string> = ref("");
-
-switch (props.card.deck) {
-  case "Neutralne":
-    color.value = "rgba(203, 213, 225, 0.5)";
-    break;
-  case "Potwory":
-    color.value = "rgba(153, 27, 27, 0.5)";
-    break;
-  case "Królestwa Północy":
-    color.value = "rgba(30,64,175,0.5)";
-    break;
-  case "Scoia'tael":
-    color.value = "rgba(63,98,18,0.5)";
-    break;
-  case "Nilfgaard":
-    color.value = "rgba(202,138,4,0.5)";
-    break;
-  case "Skellige":
-    color.value = "rgba(107,33,168,0.5)";
-    break;
-}
+let color: Ref<string> = ref(colorCheck(props.card.deck));
 
 const handleCheck = async () => {
   const userId = localStorage.getItem("userId");

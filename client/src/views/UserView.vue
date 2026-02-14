@@ -17,14 +17,13 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <div class="grid grid-col-3">
+  <div class="grid grid-cols-3">
     <div class="" v-for="stat in stats">
       <ProgressCircle
         :how-many-cards="stat.total_count"
         :how-many-checks="stat.owned_count"
         :decks-name="stat.deck"
       />
-      <p>{{ stat.deck }}</p>
     </div>
   </div>
 </template>
