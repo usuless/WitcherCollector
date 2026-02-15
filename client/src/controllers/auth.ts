@@ -44,3 +44,7 @@ export const handleLogin = async (login: string, password: string) => {
     localStorage.setItem("userId", result.userId);
   } catch (error) {}
 };
+
+export const isLoggedIn = async (token: string) => {
+  return false;
+};
