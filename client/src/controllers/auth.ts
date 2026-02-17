@@ -46,5 +46,16 @@ export const handleLogin = async (login: string, password: string) => {
 };
 
 export const isLoggedIn = async (token: string) => {
-  return false;
+  try {
+    const response = await fetch(BASIC_URL + "logincheck", {
+      method: "POST",
+      body: JSON.stringify({
+        token:token
+      })
+    })
+    return true
+  } catch (error) {
+    
+    return false;
+  }
 };
