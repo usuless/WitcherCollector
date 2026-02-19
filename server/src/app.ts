@@ -5,6 +5,16 @@ import fastifyPostgres from "@fastify/postgres";
 import cors from "@fastify/cors";
 import "dotenv/config";
 import fastifyJwt from "@fastify/jwt";
+import type { FastifyRequest, FastifyReply } from "fastify";
+
+declare module "fastify" {
+  interface FastifyInstance {
+    authenticate: (
+      request: FastifyRequest,
+      reply: FastifyReply,
+    ) => Promise<void>;
+  }
+}
 
 export const buildApp = (opts = {}) => {
   const app = Fastify(opts);
@@ -21,6 +31,18 @@ export const buildApp = (opts = {}) => {
   app.register(fastifyJwt, {
     secret: jwtSecret,
   });
+
+  app.decorate(
+    "authenticate",
+    async (request: FastifyRequest, reply: FastifyReply) => {
+      try {
+        await request.jwtVerify();
+      } catch (error) {
+        reply.send(error);
+      }
+    },
+  );
+
   app.register(authRoutes, { prefix: "/auth" });
   app.register(apiRoutes, { prefix: "/api" });
   app.register(fastifyPostgres, {

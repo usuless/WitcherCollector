@@ -42,6 +42,7 @@ export const handleLogin = async (login: string, password: string) => {
     }
     const result = await response.json();
     localStorage.setItem("userId", result.userId);
+    localStorage.setItem("token", result.token);
   } catch (error) {}
 };
 
@@ -50,12 +51,17 @@ export const isLoggedIn = async (token: string) => {
     const response = await fetch(BASIC_URL + "logincheck", {
       method: "POST",
       body: JSON.stringify({
-        token:token
-      })
-    })
-    return true
+        token: token,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`${response.status}`);
+    }
+
+    return true;
   } catch (error) {
-    
+    console.error(error);
     return false;
   }
 };

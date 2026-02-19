@@ -1,16 +1,10 @@
 import type { FastifyInstance } from "fastify";
 import bcrypt from "bcrypt";
-
-interface RegisterBody {
-  login: string;
-  password: string;
-  mail: string;
-}
-
-interface LoginBody {
-  login: string;
-  password: string;
-}
+import type {
+  LoginBody,
+  LoginCheckBody,
+  RegisterBody,
+} from "../types/types.js";
 
 export default async function authRoutes(fastify: FastifyInstance) {
   fastify.post<{ Body: RegisterBody }>("/register", async (request, reply) => {
@@ -67,4 +61,11 @@ export default async function authRoutes(fastify: FastifyInstance) {
 
     return { token, userId };
   });
+
+  fastify.post<{ Body: LoginCheckBody }>(
+    "/logincheck",
+    async (request, reply) => {
+      const token = request.body.token;
+    },
+  );
 }
