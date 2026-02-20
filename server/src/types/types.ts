@@ -19,3 +19,12 @@ export interface LoginBody {
 export interface LoginCheckBody {
   token: string;
 }
+
+export interface addCardBody {
+  userId: number;
+  cardId: number;
+}
+
+export interface UserParams {
+  userId: string;
+}

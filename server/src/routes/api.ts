@@ -1,11 +1,9 @@
 import type { FastifyInstance } from "fastify";
-
-interface addCardBody {
-  userId: number;
-  cardId: number;
-}
+import type { addCardBody, UserParams } from "../types/types.js";
 
 export default async function apiRoutes(fastify: FastifyInstance) {
+  fastify.addHook("onRequest", fastify.authenticate);
+
   fastify.get("/cards", async (request, reply) => {
     let client;
     try {
@@ -64,14 +62,15 @@ export default async function apiRoutes(fastify: FastifyInstance) {
     },
   );
 
-  fastify.get("/cards/:userId", async (request, reply) => {
-    //@ts-ignore
-    const { userId } = request.params;
-    let client;
+  fastify.get<{ Params: UserParams }>(
+    "/cards/:userId",
+    async (request, reply) => {
+      const { userId } = request.params;
+      let client;
 
-    try {
-      client = await fastify.pg.connect();
-      const query = `
+      try {
+        client = await fastify.pg.connect();
+        const query = `
       SELECT c.id, c.card, c.deck, c.image, uc.acquired_at
       FROM gwent_cards c
       INNER JOIN user_cards uc ON c.id = uc.card_id
@@ -79,25 +78,27 @@ export default async function apiRoutes(fastify: FastifyInstance) {
       ORDER BY uc.acquired_at DESC
       `;
 
-      const { rows } = await client.query(query, [userId]);
-      return rows;
-    } catch (err) {
-      return reply.status(500).send(err);
-    } finally {
-      if (client) {
-        client.release();
+        const { rows } = await client.query(query, [userId]);
+        return rows;
+      } catch (err) {
+        return reply.status(500).send(err);
+      } finally {
+        if (client) {
+          client.release();
+        }
       }
-    }
-  });
+    },
+  );
 
-  fastify.post("/cards/:userId/details", async (request, reply) => {
-    //@ts-ignore
-    const { userId } = request.params;
-    let client;
+  fastify.post<{ Params: UserParams }>(
+    "/cards/:userId/details",
+    async (request, reply) => {
+      const { userId } = request.params;
+      let client;
 
-    try {
-      client = await fastify.pg.connect();
-      const query = `
+      try {
+        client = await fastify.pg.connect();
+        const query = `
       SELECT 
           gc.deck, 
           COUNT(uc.card_id) AS owned_count,
@@ -108,14 +109,15 @@ export default async function apiRoutes(fastify: FastifyInstance) {
       ORDER BY owned_count DESC;
 `;
 
-      const { rows } = await client.query(query, [userId]);
-      return rows;
-    } catch (error) {
-      return reply.status(500).send(error);
-    } finally {
-      if (client) {
-        client.release();
+        const { rows } = await client.query(query, [userId]);
+        return rows;
+      } catch (error) {
+        return reply.status(500).send(error);
+      } finally {
+        if (client) {
+          client.release();
+        }
       }
-    }
-  });
+    },
+  );
 }
