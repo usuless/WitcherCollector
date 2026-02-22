@@ -46,22 +46,23 @@ export const handleLogin = async (login: string, password: string) => {
   } catch (error) {}
 };
 
-export const isLoggedIn = async (token: string) => {
+export const isLoggedIn = async (token: string): Promise<boolean> => {
   try {
-    const response = await fetch(BASIC_URL + "logincheck", {
-      method: "POST",
-      body: JSON.stringify({
-        token: token,
-      }),
+    const response = await fetch(BASIC_URL + "me", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
     });
 
     if (!response.ok) {
-      throw new Error(`${response.status}`);
+      return false;
     }
 
     return true;
   } catch (error) {
-    console.error(error);
+    console.error("Auth check failed:", error);
     return false;
   }
 };

@@ -1,8 +1,11 @@
-export interface addiction {
-  name: string;
-  createdAt: string;
-  isActive: boolean;
-  id: number;
+import "@fastify/jwt";
+
+declare module "@fastify/jwt" {
+  interface FastifyJWT {
+    user: {
+      id: number;
+    };
+  }
 }
 
 export interface RegisterBody {
@@ -21,7 +24,6 @@ export interface LoginCheckBody {
 }
 
 export interface addCardBody {
-  userId: number;
   cardId: number;
 }
 

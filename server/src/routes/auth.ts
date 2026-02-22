@@ -62,10 +62,14 @@ export default async function authRoutes(fastify: FastifyInstance) {
     return { token, userId };
   });
 
-  fastify.post<{ Body: LoginCheckBody }>(
-    "/logincheck",
+  fastify.get(
+    "/me",
+    { preHandler: [fastify.authenticate] },
     async (request, reply) => {
-      const token = request.body.token;
+      return {
+        authenticated: true,
+        user: request.user,
+      };
     },
   );
 }
